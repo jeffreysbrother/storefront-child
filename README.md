@@ -1,0 +1,1 @@
+### an attempt to modify an existing theme (Storefront), rather than starting from scratch
