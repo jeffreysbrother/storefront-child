@@ -11,3 +11,53 @@
  Tags:         horrible, hard-to-use, worthless, broken, shit
  Text Domain:  twenty-fifteen-child
 */
+
+/*general*/
+* {
+	color: #444;
+}
+
+
+
+/*front page*/
+
+h1, h4 {
+	display: block;
+}
+h4 {
+	color: #666;
+	padding: 10px 0 10px 0;
+}
+.main-title {
+	margin-top: 50px;
+	font-size: 80px;
+	border-bottom: 1px solid orange;
+}
+/*.music-title {
+	border-bottom: 5px solid pink;
+}
+.life-title {
+	border-bottom: 5px solid lightgreen;
+}
+.spirit-title {
+	border-bottom: 5px solid lightblue;
+}
+.prof-title {
+	border-bottom: 5px solid #ccc;
+}*/
+.soon-title {
+	color: #bbb;
+}
+
+.error-page {
+	border-bottom: none!important;
+}
+
+
+@media screen and (max-width: 767px) {
+	.main-title {
+		display: block;
+		font-size: 48px;
+		margin-top: 20px;
+	}
+}
