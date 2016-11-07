@@ -1,5 +1,5 @@
 <?php /* Template Name: Main Template */ ?>
-<?php get_header(); ?>
+<?php get_header('front'); ?>
 
 	<div class="container">
 	  	<h1 class="main-title">HondaRoss</h1>
@@ -10,4 +10,4 @@
 	  	<h4 class="soon-title">coming soon...</h4>
 	</div>
 
-<?php get_footer(); ?>
+<?php get_footer('front'); ?>
