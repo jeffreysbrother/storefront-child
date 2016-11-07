@@ -54,6 +54,13 @@ h4 {
 }
 
 
+/* woocommerce overrides */
+.woocommerce-info,
+.woocommerce-error {
+	border-left: none;
+}
+
+
 @media screen and (max-width: 767px) {
 	.main-title {
 		display: block;
