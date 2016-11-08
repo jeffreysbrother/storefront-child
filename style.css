@@ -63,7 +63,9 @@ body {
 	border-left: none;
 }
 a:focus,
-button:focus {
+button:focus,
+button.menu-toggle:focus,
+button.menu-toggle span {
 	outline: none!important;
 	color: inherit!important;
 }
