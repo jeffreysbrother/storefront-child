@@ -24,3 +24,5 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 ```
 
 But this results in my child theme CSS being duplicated down the page ... and the initial enqueue showing up **before** the parent theme CSS. WTF?
+
+To fix this, the only styles I've decided to enqueue are Bootstrap styles. It appears that the parent theme and child theme CSS load correctly without doing anything.
