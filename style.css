@@ -108,7 +108,9 @@ input[type=submit] {
 	text-decoration: none!important;
 	color: #fff!important;
 }
-
+#payment .place-order {
+	padding-bottom: 0;
+}
 
 
 
