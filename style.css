@@ -95,6 +95,11 @@ input[type=submit] {
 #payment .payment_methods li {
 	padding: 1em 1.41575em;
 }
+.cart-contents:active,
+.cart-contents:hover {
+	text-decoration: none;
+	color: #fff;
+}
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
