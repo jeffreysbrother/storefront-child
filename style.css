@@ -79,6 +79,10 @@ input[type=reset],
 input[type=submit] {
 	box-shadow: none;
 }
+.checkout-button:focus {
+	outline: none;
+	color: #fff!important;
+}
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
 .label {
