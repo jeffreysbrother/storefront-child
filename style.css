@@ -130,6 +130,12 @@ input[type=submit] {
 	padding-bottom: 0;
 }
 
+.category-mod {
+	font-weight: normal;
+    text-transform: lowercase;
+    color: #666;
+}
+
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
