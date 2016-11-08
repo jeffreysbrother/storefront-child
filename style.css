@@ -79,7 +79,8 @@ input[type=reset],
 input[type=submit] {
 	box-shadow: none;
 }
-.checkout-button:focus {
+.checkout-button:focus,
+#place_order:focus {
 	outline: none;
 	color: #fff!important;
 }
