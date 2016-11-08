@@ -32,7 +32,10 @@ add_action( 'wp_head', 'remove_post_meta' );
 
 
 
-
+function remove_comments(){
+	remove_action( 'storefront_single_post_bottom', 'storefront_display_comments', 20 );
+}
+add_action( 'wp_head', 'remove_comments' );
 
 
 
