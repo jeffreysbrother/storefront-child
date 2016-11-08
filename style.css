@@ -20,11 +20,7 @@
 
 
 /*front page*/
-
-h1, h4 {
-	display: block;
-}
-h4 {
+.sub-title {
 	color: #666;
 	padding: 10px 0 10px 0;
 }
@@ -33,25 +29,17 @@ h4 {
 	font-size: 80px;
 	border-bottom: 1px solid orange;
 }
-/*.music-title {
-	border-bottom: 5px solid pink;
-}
-.life-title {
-	border-bottom: 5px solid lightgreen;
-}
-.spirit-title {
-	border-bottom: 5px solid lightblue;
-}
-.prof-title {
-	border-bottom: 5px solid #ccc;
-}*/
 .soon-title {
 	color: #bbb;
 }
 
+
+
+/*404 page*/
 .error-page {
 	border-bottom: none!important;
 }
+
 
 
 /* woocommerce overrides */
@@ -61,6 +49,7 @@ h4 {
 }
 
 
+/*media queries*/
 @media screen and (max-width: 767px) {
 	.main-title {
 		display: block;
