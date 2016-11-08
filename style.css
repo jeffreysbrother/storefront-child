@@ -89,6 +89,9 @@ input[type=submit] {
 	outline: none;
 	color: #fff!important;
 }
+.wc-proceed-to-checkout .button.checkout-button:hover {
+	text-decoration: none;
+}
 #payment .place-order {
 	padding-left: 0;
 	padding-right: 0;
