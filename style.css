@@ -150,7 +150,7 @@ input[type=submit] {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
 	/*checkout page*/
 	#billing_first_name_field,
 	#billing_last_name_field,
