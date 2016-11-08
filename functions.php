@@ -8,7 +8,7 @@ function my_theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 
-add_action( 'wp_head', 'remove_search' );
 function remove_search(){
 	remove_action( 'storefront_header', 'storefront_product_search' );
 }
+add_action( 'wp_head', 'remove_search' );
