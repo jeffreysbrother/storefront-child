@@ -35,6 +35,13 @@ body {
 
 
 
+/*header*/
+.site-title a:hover {
+	text-decoration: none;
+}
+
+
+
 /*404 page*/
 .error-page {
 	border-bottom: none!important;
