@@ -63,11 +63,17 @@ a:focus,
 button:focus {
 	outline: none;
 }
-
 .storefront-handheld-footer-bar {
 	box-shadow: none;
 }
-
+.added_to_cart,
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	box-shadow: none;
+}
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
 .label {
