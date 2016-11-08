@@ -31,10 +31,10 @@ add_action( 'wp_head', 'remove_post_meta' );
 
 
 
-function remove_blog_nav(){
-	remove_action( 'storefront_single_post_bottom', 'storefront_post_nav', 10 );
-}
-add_action( 'wp_head', 'remove_blog_nav' );
+// function remove_blog_nav(){
+// 	remove_action( 'storefront_single_post_bottom', 'storefront_post_nav', 10 );
+// }
+// add_action( 'wp_head', 'remove_blog_nav' );
 
 
 function remove_comments(){
