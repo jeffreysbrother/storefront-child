@@ -173,6 +173,13 @@ input[type=submit] {
 		width: 100%;
 		float: none;
 	}
+	/*override extreme margin values coming from parent theme CSS*/
+	.storefront-primary-navigation {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
