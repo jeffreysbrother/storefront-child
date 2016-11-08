@@ -17,7 +17,8 @@ body {
 	font-size: 16px;
 }
 
-.content-area {
+.content-area,
+#secondary {
 	margin-top: 25px;
 }
 
