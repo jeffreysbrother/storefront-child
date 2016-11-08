@@ -131,6 +131,8 @@ input[type=submit] {
 	#billing_last_name_field,
 	#billing_email_field,
 	#billing_phone_field,
+	#billing_state_field,
+	#billing_postcode_field,
 	/*account details page in My Account*/
 	.woocommerce-MyAccount-content .form-row-first,
 	.woocommerce-MyAccount-content .form-row-last {
