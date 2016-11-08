@@ -22,14 +22,19 @@ function remove_breadcrumbs(){
 add_action( 'wp_head', 'remove_breadcrumbs' );
 
 
-// this will remove the post meta info from the blog listing page *AND* the single post page, as well as back and forth navigation
+// this will remove the post meta info from the blog listing page *AND* the single post page
 function remove_post_meta(){
 	remove_action( 'storefront_single_post', 'storefront_post_meta', 20 );
 	remove_action( 'storefront_loop_post', 'storefront_post_meta', 20 );
-	remove_action( 'storefront_single_post_bottom', 'storefront_post_nav', 10 );
 }
 add_action( 'wp_head', 'remove_post_meta' );
 
+
+
+function remove_blog_nav(){
+	remove_action( 'storefront_single_post_bottom', 'storefront_post_nav', 10 );
+}
+add_action( 'wp_head', 'remove_blog_nav' );
 
 
 function remove_comments(){
@@ -38,15 +43,3 @@ function remove_comments(){
 add_action( 'wp_head', 'remove_comments' );
 
 
-
-// function remove_product_sidebar(){
-// 	remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-// }
-// add_action( 'wp_head', 'remove_product_sidebar' );
-
-
-
-// function remove_related_products(){
-// 	remove_action( 'woocommerce_after_single_product_summary hook', 'woocommerce_output_related_products', 20 );
-// }
-// add_action( 'wp_head', 'remove_related_products' );
