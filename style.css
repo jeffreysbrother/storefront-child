@@ -17,6 +17,10 @@ body {
 	font-size: 16px;
 }
 
+.page-template-template-fullwidth-php .content-area {
+	margin-top: 25px;
+}
+
 
 
 /*front page*/
