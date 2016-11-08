@@ -62,7 +62,7 @@
 a:focus,
 button:focus {
 	outline: none;
-	color: inherit;
+	color: inherit!important;
 }
 .added_to_cart:focus {
 	color: inherit;
