@@ -94,7 +94,7 @@ input[type=submit] {
 	background-color: #f8f8f8;
 }
 #payment .payment_methods li {
-	padding: 1em 1.41575em;
+	padding: 1em 1.41575em!important;
 }
 .site-header-cart a.cart-contents:active,
 .site-header-cart a.cart-contents:hover {
