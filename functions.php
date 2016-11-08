@@ -20,3 +20,10 @@ function remove_breadcrumbs(){
 	remove_action( 'storefront_content_top', 'woocommerce_breadcrumb', 10 );
 }
 add_action( 'wp_head', 'remove_breadcrumbs' );
+
+
+
+function remove_product_sidebar(){
+	remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+}
+add_action( 'wp_head', 'remove_product_sidebar' );
