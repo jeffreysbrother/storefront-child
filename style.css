@@ -40,12 +40,14 @@
 
 
 
-/* woocommerce overrides */
+/* woocommerce and woocommerce theme overrides */
 .woocommerce-info,
 .woocommerce-error {
 	border-left: none;
 }
-
+a:focus {
+	border: none;
+}
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
