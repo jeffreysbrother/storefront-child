@@ -64,6 +64,9 @@ button:focus {
 	outline: none;
 	color: inherit;
 }
+.added_to_cart:focus {
+	color: inherit;
+}
 .storefront-handheld-footer-bar {
 	box-shadow: none;
 }
