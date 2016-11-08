@@ -89,6 +89,8 @@ input[type=submit] {
 	padding-right: 0;
 }
 
+
+
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
 .label {
 	display: block;
@@ -101,6 +103,15 @@ input[type=submit] {
 
 
 /*media queries*/
+@media screen and (min-width: 768px) {
+	/*checkout page*/
+	#billing_first_name_field,
+	#billing_last_name_field {
+		margin-right: 0;
+		width: 48%;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.main-title {
 		display: block;
