@@ -40,6 +40,13 @@
 
 
 
+/*single blog page*/
+#respond {
+	background-color: initial;
+	padding: 0;
+}
+
+
 /* woocommerce and woocommerce theme overrides */
 .woocommerce-info,
 .woocommerce-error {
