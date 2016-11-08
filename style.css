@@ -62,6 +62,7 @@
 a:focus,
 button:focus {
 	outline: none;
+	color: inherit;
 }
 .storefront-handheld-footer-bar {
 	box-shadow: none;
