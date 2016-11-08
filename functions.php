@@ -30,7 +30,7 @@ add_action( 'wp_head', 'remove_breadcrumbs' );
 
 
 
-function remove_related_products(){
-	remove_action( 'woocommerce_after_single_product_summary hook', 'woocommerce_output_related_products', 20 );
-}
-add_action( 'wp_head', 'remove_related_products' );
+// function remove_related_products(){
+// 	remove_action( 'woocommerce_after_single_product_summary hook', 'woocommerce_output_related_products', 20 );
+// }
+// add_action( 'wp_head', 'remove_related_products' );
