@@ -52,7 +52,8 @@
 .woocommerce-error {
 	border-left: none;
 }
-a:focus {
+a:focus,
+button:focus {
 	outline: none;
 }
 
