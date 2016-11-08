@@ -1,1 +1,3 @@
 ### an attempt to modify an existing theme (Storefront), rather than starting from scratch
+
+Interesting point made [here](https://wordpress.org/support/topic/unable-to-make-shop-page-full-width/). Apparently, the reason the shop page had no shortcode and was unresponsive to changing the page template to full-width, is because it's not a real page. We can solve this by duplicating the parent theme's full-width template (whatever they've called it) and renaming it archive-product.php. This did not result in what I was looking for, however; the layout is single column rather than three. This might be okay, though, because we are not planning to have many products.
