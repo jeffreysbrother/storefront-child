@@ -88,6 +88,10 @@ input[type=submit] {
 	padding-left: 0;
 	padding-right: 0;
 }
+.cart-subtotal,
+.order-total {
+	background-color: #f8f8f8;
+}
 
 
 
