@@ -22,7 +22,7 @@ function remove_breadcrumbs(){
 add_action( 'wp_head', 'remove_breadcrumbs' );
 
 
-// this will remove the post meta info from the blog listing page *AND* the single post page
+// this will remove the post meta info from the blog listing page *AND* the single post page, as well as back and forth navigation
 function remove_post_meta(){
 	remove_action( 'storefront_single_post', 'storefront_post_meta', 20 );
 	remove_action( 'storefront_loop_post', 'storefront_post_meta', 20 );
