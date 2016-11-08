@@ -56,7 +56,8 @@
 
 /* woocommerce and woocommerce theme overrides */
 .woocommerce-info,
-.woocommerce-error {
+.woocommerce-error,
+.woocommerce-message {
 	border-left: none;
 }
 a:focus,
