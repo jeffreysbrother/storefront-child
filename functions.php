@@ -25,8 +25,11 @@ add_action( 'wp_head', 'remove_breadcrumbs' );
 
 function remove_post_meta(){
 	remove_action( 'storefront_single_post', 'storefront_post_meta', 20 );
+	remove_action( 'storefront_loop_post', 'storefront_post_meta', 20 );
 }
 add_action( 'wp_head', 'remove_post_meta' );
+
+
 
 
 
