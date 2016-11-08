@@ -106,7 +106,9 @@ input[type=submit] {
 @media screen and (min-width: 768px) {
 	/*checkout page*/
 	#billing_first_name_field,
-	#billing_last_name_field {
+	#billing_last_name_field,
+	#billing_email_field,
+	#billing_phone_field {
 		margin-right: 0;
 		width: 48%;
 	}
