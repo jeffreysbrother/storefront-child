@@ -43,3 +43,8 @@ function remove_comments(){
 add_action( 'wp_head', 'remove_comments' );
 
 
+
+function remove_footer_credit(){
+	remove_action( 'storefront_footer', 'storefront_credit', 20 );
+}
+add_action( 'wp_head', 'remove_footer_credit' );
