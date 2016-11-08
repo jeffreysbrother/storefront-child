@@ -130,6 +130,10 @@ input[type=submit] {
 		margin-right: 0;
 		width: 48%;
 	}
+	/*make item count more visible*/
+	.site-header-cart .cart-contents .count {
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 767px) {
