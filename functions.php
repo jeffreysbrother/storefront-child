@@ -1,5 +1,16 @@
 <?php
 
+
+//Dequeue JavaScript
+function remove_unnecessary_scripts() {
+    wp_dequeue_script( 'storefront-navigation' );
+    wp_deregister_script( 'storefront-navigation' );
+    wp_dequeue_script( 'storefront-skip-link-focus-fix' );
+    wp_deregister_script( 'storefront-skip-link-focus-fix' );
+}
+add_action( 'wp_print_scripts', 'remove_unnecessary_scripts' );
+
+
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
 }
