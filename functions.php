@@ -46,3 +46,15 @@ function remove_footer_credit(){
 	remove_action( 'storefront_footer', 'storefront_credit', 20 );
 }
 add_action( 'wp_head', 'remove_footer_credit' );
+
+
+
+// Hook in
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
+     unset($fields['order']['order_comments']);
+
+     return $fields;
+}
