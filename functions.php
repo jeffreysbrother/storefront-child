@@ -1,14 +1,13 @@
 <?php
 
-
-//Dequeue JavaScript
-function remove_unnecessary_scripts() {
-    wp_dequeue_script( 'storefront-navigation' );
-    wp_deregister_script( 'storefront-navigation' );
-    wp_dequeue_script( 'storefront-skip-link-focus-fix' );
-    wp_deregister_script( 'storefront-skip-link-focus-fix' );
-}
-add_action( 'wp_print_scripts', 'remove_unnecessary_scripts' );
+// This is how we would dequeue JavaScript. Not sure what the diff is between dequeue and deregister
+// function remove_unnecessary_scripts() {
+//     wp_dequeue_script( 'storefront-navigation' );
+//     wp_deregister_script( 'storefront-navigation' );
+//     wp_dequeue_script( 'storefront-skip-link-focus-fix' );
+//     wp_deregister_script( 'storefront-skip-link-focus-fix' );
+// }
+// add_action( 'wp_print_scripts', 'remove_unnecessary_scripts' );
 
 
 function my_theme_enqueue_styles() {
