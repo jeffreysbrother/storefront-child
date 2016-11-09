@@ -50,7 +50,7 @@ add_action( 'wp_head', 'remove_footer_credit' );
 
 
 // this will remove the order comments ... also needed to comment out line in form-shipping.php to get rid of the heading
-// also removing the company name field on checkout page
+// also trying to remove the company name field on checkout page. This did not work
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 function custom_override_checkout_fields( $fields ) {
      unset($fields['order']['order_comments']);
