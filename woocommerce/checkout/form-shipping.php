@@ -49,11 +49,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', get_option( 'woocommerce_enable_order_comments', 'yes' ) === 'yes' ) ) : ?>
 
+			<?php /*
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
-
 			<h3><?php _e( 'Additional information', 'woocommerce' ); ?></h3>
-
 		<?php endif; ?>
+			*/ ?>
 
 		<?php foreach ( $checkout->checkout_fields['order'] as $key => $field ) : ?>
 

@@ -49,10 +49,8 @@ add_action( 'wp_head', 'remove_footer_credit' );
 
 
 
-// Hook in
+// this will remove the order comments ... also needed to comment out line in form-shipping.php to get rid of the heading
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
-
-// Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields( $fields ) {
      unset($fields['order']['order_comments']);
 
