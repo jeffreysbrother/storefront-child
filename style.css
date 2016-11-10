@@ -147,6 +147,11 @@ input[type=submit] {
 	display: none;
 }
 
+/*hide upsells on product page (below product description)*/
+.up-sells {
+	display: none;
+}
+
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
