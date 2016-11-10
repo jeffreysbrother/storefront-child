@@ -59,6 +59,9 @@ body {
 #zoom-social-icons-widget-2 {
 	text-align: center;
 }
+.footer-widgets {
+	border-bottom: none;
+}
 
 
 
