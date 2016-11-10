@@ -169,8 +169,8 @@ input[type=submit] {
 	}
 	/*make blog content 100% width after removing post meta info in functions.php*/
 	.entry-content {
-		width: 100%;
-		float: none;
+		width: 100%!important;
+		float: none!important;
 	}
 	/*override extreme margin values coming from parent theme CSS*/
 	.storefront-primary-navigation {
