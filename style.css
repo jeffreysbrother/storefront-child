@@ -137,7 +137,7 @@ input[type=submit] {
 }
 
 /*hide description tab on product page*/
-.description_tab {
+.woocommerce-tabs ul.tabs .description_tab {
 	display: none;
 }
 
