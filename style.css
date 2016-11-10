@@ -23,6 +23,12 @@ body {
 }
 
 
+/*navigation*/
+.storefront-primary-navigation {
+	background-color: inherit;
+}
+
+
 
 /*front page*/
 .sub-title {

@@ -81,7 +81,7 @@ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 
 
 
-// remove upsells and related products
+// remove upsells (not working) and related products
 function eliminate_upsells() {
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
