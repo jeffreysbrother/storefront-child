@@ -62,6 +62,7 @@ body {
 }
 .footer-widgets {
 	border-bottom: none;
+	padding: 0;
 }
 /*get rid of strange padding and margin*/
 .widget .zoom-social-icons-list--no-labels.zoom-social-icons-list--without-canvas {
