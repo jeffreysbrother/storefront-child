@@ -168,7 +168,7 @@ input[type=submit] {
 		opacity: 1;
 	}
 	/*make blog content 100% width after removing post meta info in functions.php*/
-	.hentry.type-post .entry-content {
+	.entry-content {
 		width: 100%;
 		float: none;
 	}
