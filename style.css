@@ -136,6 +136,11 @@ input[type=submit] {
     color: #666;
 }
 
+/*hide description tab on product page*/
+.description_tab {
+	display: none;
+}
+
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */

@@ -71,8 +71,11 @@ function custom_override_checkout_fields( $fields ) {
 
 
 
+// this removes the reviews tab functionality
 add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
     function wcs_woo_remove_reviews_tab($tabs) {
 	    unset($tabs['reviews']);
 	    return $tabs;
 }
+// relatedly, doing the above makes the "description" tab unnecessary, even though we still want to see the actual product description itself. so in the CSS file, we will hide .description_tab
+
