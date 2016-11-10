@@ -71,7 +71,7 @@ body {
     margin-bottom: 10px;
     border-bottom: none;
 }
-h2.alpha.entry-title {
+.alpha.entry-title a {
 	font-weight: 500;
 }
 
