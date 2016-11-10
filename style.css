@@ -62,7 +62,10 @@ body {
 .footer-widgets {
 	border-bottom: none;
 }
-
+/*get rid of strange padding*/
+.site-footer {
+	padding: inherit;
+}
 
 
 /*404 page*/
