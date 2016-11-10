@@ -195,6 +195,10 @@ input[type=submit] {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	/*reduce padding on blog listing page*/
+	.hentry .entry-header {
+	    margin-bottom: 2.617924em;
+	}
 }
 
 @media screen and (max-width: 767px) {
