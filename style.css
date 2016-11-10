@@ -71,8 +71,10 @@ body {
     margin-bottom: 10px;
     border-bottom: none;
 }
-.alpha.entry-title a {
+.alpha.entry-title a,
+.alpha.entry-title {
 	font-weight: 500;
+	color: #484c51;
 }
 
 
