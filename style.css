@@ -71,7 +71,9 @@ body {
     margin-bottom: 10px;
     border-bottom: none;
 }
-
+h2.alpha.entry-title {
+	font-weight: 500;
+}
 
 
 /*single blog page*/
