@@ -79,3 +79,11 @@ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 }
 // relatedly, doing the above makes the "description" tab unnecessary, even though we still want to see the actual product description itself. so in the CSS file, we will hide .description_tab
 
+
+
+// remove upsells
+function eliminate_upsells() {
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+}
+add_action('wp_head', 'eliminate_upsells');
