@@ -67,6 +67,11 @@ body {
 
 }
 
+.hentry .entry-header {
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
 
 
 /*single blog page*/
@@ -197,7 +202,8 @@ input[type=submit] {
 	}
 	/*reduce padding on blog listing page*/
 	.hentry .entry-header {
-	    margin-bottom: 2.617924em;
+	    margin-bottom: 10px;
+	    border-bottom: ;
 	}
 }
 
