@@ -89,4 +89,3 @@ function eliminate_upsells() {
 add_action('wp_head', 'eliminate_upsells');
 
 
-remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
