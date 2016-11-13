@@ -28,6 +28,11 @@ body {
 	background-color: inherit;
 }
 
+/*mobile navigation*/
+button.menu-toggle {
+	border: none;
+}
+
 
 
 /*front page*/
