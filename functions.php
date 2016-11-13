@@ -112,8 +112,10 @@ add_action( 'init', 'jk_remove_storefront_handheld_footer_bar' );
 
 
 // remove sidebar conditionally
-add_action( 'get_header', 'remove_storefront_sidebar' );
+function remove_storefront_sidebar() {
 	if ( is_product() || is_page('shop') ) {
 		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 	}
 }
+add_action( 'get_header', 'remove_storefront_sidebar' );
+
