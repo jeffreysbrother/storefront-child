@@ -102,3 +102,12 @@ function delay_remove() {
 add_action('init','delay_remove');
 
 
+
+// remove handheld footer
+function jk_remove_storefront_handheld_footer_bar() {
+  remove_action( 'storefront_footer', 'storefront_handheld_footer_bar', 999 );
+}
+add_action( 'init', 'jk_remove_storefront_handheld_footer_bar' );
+
+
+
