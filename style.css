@@ -200,7 +200,7 @@ label[for="rememberme"] {
 	margin-top: 1em;
 }
 
-/*make page full-width on proudct page after hiding sidebar*/
+/*make proudct page full width after hiding sidebar*/
 .single-product #primary {
 	width: 100%;
 }
