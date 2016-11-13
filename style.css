@@ -75,6 +75,9 @@ button.menu-toggle {
 }
 .site-footer {
 	padding: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 
