@@ -195,6 +195,11 @@ input[type=submit] {
 	display: none;
 }
 
+/*my account login page*/
+label[for="rememberme"] {
+	margin-top: 1em;
+}
+
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
