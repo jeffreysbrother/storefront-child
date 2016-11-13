@@ -121,7 +121,7 @@ add_action( 'get_header', 'remove_storefront_sidebar_product_page' );
 
 
 
-// remove sidebar on shop page
+// remove sidebar on shop page, apparently this is different than removing this on the product page, because here we cannot use is_product() or is_page()
 function remove_storefront_sidebar_shop_page() {
 	if( function_exists( 'is_shop' ) ) {
     	remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
