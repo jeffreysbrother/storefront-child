@@ -59,14 +59,18 @@ add_action( 'wp_head', 'remove_footer_credit' );
 
 
 
-// this will remove the order comments ... also needed to comment out line in form-shipping.php to get rid of the heading
-// also removing the company name field on checkout page.
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 function custom_override_checkout_fields( $fields ) {
-     unset($fields['order']['order_comments']);
-     unset($fields['shipping']['shipping_company']);
-     unset($fields['billing']['billing_company']);
-     return $fields;
+	// this will remove the order comments ... also needed to comment out line in form-shipping.php to get rid of the heading
+	// also removing the company name field on checkout page.
+    unset($fields['order']['order_comments']);
+    unset($fields['shipping']['shipping_company']);
+    unset($fields['billing']['billing_company']);
+    // hide all the other ones too, since we're only selling a digital download at the moment
+    
+
+    return $fields;
+
 }
 
 
