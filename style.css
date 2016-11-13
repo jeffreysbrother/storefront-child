@@ -107,6 +107,13 @@ body {
 
 
 
+/*shop page*/
+/*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
+.storefront-sorting {
+	display: none;
+}
+
+
 /* woocommerce and woocommerce theme overrides */
 .woocommerce-info,
 .woocommerce-error,
