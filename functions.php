@@ -123,8 +123,8 @@ add_action( 'get_header', 'remove_storefront_sidebar_product_page' );
 
 // remove sidebar on shop page
 function remove_storefront_sidebar_shop_page() {
-	if ( is_page( 'Shop' ) ) {
-		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+	if( function_exists( 'is_shop' ) ) {
+    	remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 	}
 }
 add_action( 'get_header', 'remove_storefront_sidebar_shop_page' );
