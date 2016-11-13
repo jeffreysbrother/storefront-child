@@ -200,6 +200,10 @@ label[for="rememberme"] {
 	margin-top: 1em;
 }
 
+/*make page full-width on proudct page after hiding sidebar*/
+.single-product #primary {
+	width: 100%;
+}
 
 
 /*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
