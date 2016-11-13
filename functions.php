@@ -67,7 +67,7 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['shipping']['shipping_company']);
     unset($fields['billing']['billing_company']);
     // hide all the other ones too, since we're only selling a digital download at the moment
-    
+
 
     return $fields;
 
@@ -91,5 +91,14 @@ function eliminate_upsells() {
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 }
 add_action('wp_head', 'eliminate_upsells');
+
+
+
+// remove default sorting dropdown in StoreFront Theme ... on Shop page (before and after products)
+function delay_remove() {
+	remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+}
+add_action('init','delay_remove');
 
 
