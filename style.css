@@ -65,6 +65,10 @@ button.menu-toggle {
 .block-orange h4 {
 	color: #eee!important;
 }
+.pink {
+	background-color: pink;
+	text-decoration: underline;
+}
 
 
 /*header*/
