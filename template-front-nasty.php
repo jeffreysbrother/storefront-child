@@ -3,7 +3,7 @@
 
 	<div>
 		<div class="block-orange">
-		  	<h1 class="pinl main-title text-center no-line">HondaRoss</h1>
+		  	<h1 class="pink main-title text-center no-line">HondaRoss</h1>
 		  	<h4 class="text-center">music</h4>
 		  	<h4 class="text-center">lifestyle</h4>
 		  	<h4 class="text-center">spiritual arts</h4>
