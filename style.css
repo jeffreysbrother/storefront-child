@@ -59,11 +59,11 @@ button.menu-toggle {
 	background-size: cover;
 }
 .block-orange {
-	background-color: orange;
+	background-color: orange!important;
 }
 .block-orange h1,
 .block-orange h4 {
-	color: #eee;
+	color: #eee!important;
 }
 
 
