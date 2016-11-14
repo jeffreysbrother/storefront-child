@@ -68,6 +68,7 @@ button.menu-toggle {
 .pink {
 	background-color: pink;
 	text-decoration: underline;
+	border-top: 2px dotted lightgreen;
 }
 
 
