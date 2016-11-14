@@ -58,6 +58,13 @@ button.menu-toggle {
 	background: url('images/people-mirror.JPG') no-repeat;
 	background-size: cover;
 }
+.block-orange {
+	background-color: orange;
+}
+.block-orange h1,
+.block-orange h4 {
+	color: #eee;
+}
 
 
 /*header*/
