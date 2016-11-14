@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('name'); ?></title>
+	<link rel="alternate" href="http://www.hondaross.com/" hreflang="en-us" />
 	<?php wp_head(); ?>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
