@@ -1,4 +1,4 @@
-<?php /* Template Name: Front Template */ ?>
+<?php /* Template Name: Front Template, Plain */ ?>
 <?php get_header('front'); ?>
 
 	<div class="container">
