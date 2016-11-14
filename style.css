@@ -51,7 +51,9 @@ button.menu-toggle {
 }
 
 /*front page, NASTY*/
-
+.no-line {
+	border-bottom: 0;
+}
 
 
 
