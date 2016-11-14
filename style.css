@@ -37,7 +37,7 @@ button.menu-toggle {
 
 
 /*front page, plain*/
-.sub-title {
+/*.sub-title {
 	color: #666;
 	padding: 10px 0 10px 0;
 }
@@ -48,7 +48,7 @@ button.menu-toggle {
 }
 .soon-title {
 	color: #bbb;
-}
+}*/
 
 /*front page, NASTY*/
 .no-line {
@@ -69,6 +69,10 @@ button.menu-toggle {
 	background-color: pink;
 	text-decoration: underline;
 	border-top: 4px dotted lightgreen;
+	font-weight: 100;
+	color: red;
+	border-bottom: 1px solid blue;
+	border-radius: 50px;
 }
 .extending {
 	display: inline;
