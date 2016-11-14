@@ -54,8 +54,9 @@ button.menu-toggle {
 .no-line {
 	border-bottom: 0!important;
 }
-.nasty-wrapper {
+.nasty-image {
 	background: url('images/people-mirror.JPG') no-repeat;
+	background-size: cover;
 }
 
 
