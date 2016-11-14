@@ -68,7 +68,11 @@ button.menu-toggle {
 .pink {
 	background-color: pink;
 	text-decoration: underline;
-	border-top: 2px dotted lightgreen;
+	border-top: 4px dotted lightgreen;
+}
+.extending {
+	background-color: lightblue;
+	padding-bottom: 10px;
 }
 
 

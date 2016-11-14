@@ -9,7 +9,7 @@
 			  	<h4>lifestyle</h4>
 			  	<h4 class="text-right">spiritual arts</h4>
 			  	<h4>professional advice</h4>
-			  	<h4><a href="/blog">Enter site</a> or <a href="/shop">buy the album</a></h4>
+			  	<h4 class="extending"><a href="/blog">Enter site</a> or <a href="/shop">buy the album</a></h4>
 		  	</div>
 	  	</div>
 	</div>
