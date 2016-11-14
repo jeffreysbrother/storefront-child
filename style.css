@@ -36,7 +36,7 @@ button.menu-toggle {
 
 
 
-/*front page*/
+/*front page, plain*/
 .sub-title {
 	color: #666;
 	padding: 10px 0 10px 0;
@@ -49,6 +49,9 @@ button.menu-toggle {
 .soon-title {
 	color: #bbb;
 }
+
+/*front page, NASTY*/
+
 
 
 
