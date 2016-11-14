@@ -7,7 +7,7 @@
 	  	<h4 class="sub-title text-center">lifestyle</h4>
 	  	<h4 class="sub-title text-center">spiritual arts</h4>
 	  	<h4 class="sub-title text-center">professional advice</h4>
-	  	<h4 class="sub-title text-center"><a href="/blog">Enter site</a> or <a href="/store">buy the album</a></h4>
+	  	<h4 class="sub-title text-center"><a href="/blog">Enter site</a> or <a href="/shop">buy the album</a></h4>
 	</div>
 
 <?php get_footer('front'); ?>
