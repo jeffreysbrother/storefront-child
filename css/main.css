@@ -96,7 +96,6 @@ button.menu-toggle {
   background-color: initial;
   padding: 0; }
 
-/*checkout page*/
 /*shop page*/
 /*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
 .storefront-sorting {

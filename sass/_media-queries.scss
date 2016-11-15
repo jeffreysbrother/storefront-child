@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) { 
+	/*checkout page*/
+	#billing_first_name_field,
+	#billing_last_name_field,
+	#billing_email_field,
+	#billing_phone_field,
+	#billing_state_field,
+	#billing_postcode_field,
+	/*account details page in My Account*/
+	.woocommerce-MyAccount-content .form-row-first,
+	.woocommerce-MyAccount-content .form-row-last {
+		margin-right: 0;
+		width: 48%;
+	}
+	/*make item count more visible*/
+	.site-header-cart .cart-contents .count {
+		opacity: 1;
+	}
+	/*make blog content 100% width after removing post meta info in functions.php*/
+	.entry-content {
+		width: 100%!important;
+		float: none!important;
+	}
+	/*override extreme margin values coming from parent theme CSS*/
+	.storefront-primary-navigation {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/*reduce padding on blog listing page*/
+	.hentry .entry-header {
+	    margin-bottom: 10px;
+	    border-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.main-title {
+		display: block;
+		font-size: 48px;
+		margin-top: 20px;
+	}
+}
