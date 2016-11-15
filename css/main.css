@@ -76,7 +76,7 @@ button.menu-toggle {
 
 /*get rid of strange padding and margin*/
 .widget .zoom-social-icons-list--no-labels.zoom-social-icons-list--without-canvas {
-  margin: 0; }
+  margin: 0 !important; }
 
 .site-footer {
   padding: 40px; }
