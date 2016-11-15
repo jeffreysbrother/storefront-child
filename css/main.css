@@ -80,7 +80,7 @@ button.menu-toggle {
   margin: 0; }
 
 .site-footer {
-  padding: 40px; }
+  padding: 40px !important; }
 
 /*404 page*/
 .error-page {
