@@ -1,42 +1,16 @@
-/*general*/
-
-body {
-	font-size: 16px;
-	word-wrap: normal;
-	color: red;
-}
-
-.content-area,
-#secondary {
-	margin-top: 25px;
-}
-
-
-/*navigation*/
-.storefront-primary-navigation {
-	background-color: inherit;
-}
-
-/*mobile navigation*/
-button.menu-toggle {
-	border: none;
-}
+@import 'general';
+@import 'desktop-nav';
+@import 'mobile-nav';
+@import 'front-page-plain';
 
 
 
-/*front page, plain*/
-/*.sub-title {
-	color: #666;
-	padding: 10px 0 10px 0;
-}
-.main-title {
-	margin-top: 50px;
-	font-size: 80px;
-	border-bottom: 1px solid orange;
-}
-.soon-title {
-	color: #bbb;
-}*/
+
+
+
+
+
+
 
 /*front page, NASTY*/
 /*.no-line {
