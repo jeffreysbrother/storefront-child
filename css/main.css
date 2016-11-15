@@ -1,0 +1,234 @@
+/*general*/
+body {
+  font-size: 16px;
+  word-wrap: normal;
+  color: red; }
+
+.content-area,
+#secondary {
+  margin-top: 25px; }
+
+/*navigation*/
+.storefront-primary-navigation {
+  background-color: inherit; }
+
+/*mobile navigation*/
+button.menu-toggle {
+  border: none; }
+
+/*front page, plain*/
+/*.sub-title {
+	color: #666;
+	padding: 10px 0 10px 0;
+}
+.main-title {
+	margin-top: 50px;
+	font-size: 80px;
+	border-bottom: 1px solid orange;
+}
+.soon-title {
+	color: #bbb;
+}*/
+/*front page, NASTY*/
+/*.no-line {
+	border-bottom: 0!important;
+}*/
+.nasty-image {
+  background: url("images/people-mirror.JPG") no-repeat;
+  background-size: cover; }
+
+.block-orange {
+  background-color: orange !important; }
+
+.block-orange h1,
+.block-orange h4 {
+  /*color: #eee!important;*/ }
+
+.pink {
+  background-color: pink;
+  /*text-decoration: underline;*/
+  border-top: 4px dotted lightgreen;
+  font-weight: 100;
+  color: red;
+  border-bottom: 1px solid blue;
+  border-radius: 50px; }
+
+.extending {
+  display: inline;
+  background-color: lightblue;
+  padding-bottom: 35px; }
+
+/*header*/
+.site-title a:hover,
+.site-title a:focus {
+  text-decoration: none;
+  color: #fff; }
+
+/*footer*/
+#zoom-social-icons-widget-2 {
+  text-align: center;
+  margin: 0; }
+
+.footer-widgets {
+  border-bottom: none;
+  padding: 0; }
+
+/*get rid of strange padding and margin*/
+.widget .zoom-social-icons-list--no-labels.zoom-social-icons-list--without-canvas {
+  margin: 0; }
+
+.site-footer {
+  padding: 40px;
+  /*	position: fixed;
+	bottom: 0;
+	width: 100%;*/ }
+
+/*404 page*/
+.error-page {
+  border-bottom: none !important; }
+
+/*blog listing page*/
+.hentry .entry-header {
+  margin-bottom: 10px;
+  border-bottom: none; }
+
+.alpha.entry-title a,
+.entry-header .entry-title {
+  font-weight: 500;
+  color: #484c51; }
+
+/*single blog page*/
+#respond {
+  background-color: initial;
+  padding: 0; }
+
+/*checkout page*/
+/*shop page*/
+/*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
+.storefront-sorting {
+  display: none; }
+
+/* woocommerce and woocommerce theme overrides */
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-message {
+  border-left: none; }
+
+a:focus,
+button:focus,
+button.menu-toggle:focus,
+button.menu-toggle span {
+  outline: none !important;
+  color: inherit !important; }
+
+a.added_to_cart:focus,
+a.add_to_cart_button:focus {
+  color: inherit !important; }
+
+.storefront-handheld-footer-bar {
+  box-shadow: none; }
+
+.added_to_cart,
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  box-shadow: none; }
+
+.checkout-button:focus,
+#place_order:focus {
+  outline: none;
+  color: #fff !important; }
+
+.button.checkout-button:hover,
+.button.checkout-button:focus {
+  text-decoration: none; }
+
+#payment .place-order {
+  padding-left: 0;
+  padding-right: 0; }
+
+.cart-subtotal,
+.order-total {
+  background-color: #f8f8f8; }
+
+#payment .payment_methods li {
+  padding: 1em 1.41575em !important; }
+
+#payment .payment_methods > li:hover {
+  background-color: #fafafa; }
+
+.site-header-cart a.cart-contents:active,
+.site-header-cart a.cart-contents:hover {
+  text-decoration: none !important;
+  color: #fff !important; }
+
+#payment .place-order {
+  padding-bottom: 0; }
+
+.category-mod {
+  font-weight: normal;
+  text-transform: lowercase;
+  color: #666; }
+
+/*hide description tab on product page*/
+.woocommerce-tabs ul.tabs .description_tab {
+  display: none; }
+
+/*hide upsells on product page (below product description)*/
+.up-sells {
+  display: none; }
+
+/*my account login page*/
+label[for="rememberme"] {
+  margin-top: 1em; }
+
+/*make proudct page and shop page full width after hiding sidebar on both pages*/
+.single-product #primary,
+.post-type-archive-product #primary {
+  width: 100%; }
+
+/*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
+.label {
+  display: block;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit; }
+
+@media screen and (min-width: 768px) {
+  /*checkout page*/
+  #billing_first_name_field,
+  #billing_last_name_field,
+  #billing_email_field,
+  #billing_phone_field,
+  #billing_state_field,
+  #billing_postcode_field,
+  .woocommerce-MyAccount-content .form-row-first,
+  .woocommerce-MyAccount-content .form-row-last {
+    margin-right: 0;
+    width: 48%; }
+  /*make item count more visible*/
+  .site-header-cart .cart-contents .count {
+    opacity: 1; }
+  /*make blog content 100% width after removing post meta info in functions.php*/
+  .entry-content {
+    width: 100% !important;
+    float: none !important; }
+  /*override extreme margin values coming from parent theme CSS*/
+  .storefront-primary-navigation {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
+  /*reduce padding on blog listing page*/
+  .hentry .entry-header {
+    margin-bottom: 10px;
+    border-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .main-title {
+    display: block;
+    font-size: 48px;
+    margin-top: 20px; } }

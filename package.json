@@ -1,0 +1,23 @@
+{
+  "name": "storefront-child",
+  "version": "1.0.0",
+  "description": "Interesting point made [here](https://wordpress.org/support/topic/unable-to-make-shop-page-full-width/). Apparently, the reason the shop page had no shortcode and was unresponsive to changing the page template to full-width, is because it's not a real page. We can solve this by duplicating the parent theme's full-width template (whatever they've called it) and renaming it archive-product.php. This did not result in what I was looking for, however; the layout is single column rather than three. This might be okay, though, because we are not planning to have many products.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreysbrother/storefront-child.git"
+  },
+  "author": "james cool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreysbrother/storefront-child/issues"
+  },
+  "homepage": "https://github.com/jeffreysbrother/storefront-child#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
