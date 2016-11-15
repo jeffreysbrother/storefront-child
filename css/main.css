@@ -1,8 +1,7 @@
 /*general stuff*/
 body {
   font-size: 16px;
-  word-wrap: normal;
-  color: red; }
+  word-wrap: normal; }
 
 .content-area,
 #secondary {
