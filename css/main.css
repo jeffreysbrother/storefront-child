@@ -72,15 +72,15 @@ button.menu-toggle {
   margin: 0; }
 
 .footer-widgets {
-  border-bottom: none !important;
-  padding: 0 !important; }
+  border-bottom: none;
+  padding: 0; }
 
 /*get rid of strange padding and margin*/
 .widget .zoom-social-icons-list--no-labels.zoom-social-icons-list--without-canvas {
-  margin: 0 !important; }
+  margin: 0; }
 
 .site-footer {
-  padding: 40px !important; }
+  padding: 40px; }
 
 /*404 page*/
 .error-page {
