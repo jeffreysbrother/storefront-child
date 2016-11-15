@@ -16,7 +16,7 @@ function project_dequeue_styles() {
 add_action( 'wp_print_styles', 'project_dequeue_styles' );
 
 function my_theme_enqueue_styles() {
-	wp_enqueue_style( 'storefront-style', get_template_directory_uri() . '/style.css', '', $storefront_version );
+	wp_enqueue_style( 'storefront-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
     wp_enqueue_style( 'compiled_scss', get_stylesheet_directory_uri() . "/css/main.css", array('storefront-style'));
 }
