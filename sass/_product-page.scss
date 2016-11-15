@@ -1,0 +1,15 @@
+/*hide description tab on product page*/
+.woocommerce-tabs ul.tabs .description_tab {
+	display: none;
+}
+
+/*hide upsells on product page (below product description)*/
+.up-sells {
+	display: none;
+}
+
+/*make proudct page and shop page full width after hiding sidebar on both pages*/
+.single-product #primary,
+.post-type-archive-product #primary {
+	width: 100%;
+}

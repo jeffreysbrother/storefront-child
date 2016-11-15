@@ -61,6 +61,11 @@ button.menu-toggle {
   text-decoration: none;
   color: #fff; }
 
+.site-header-cart a.cart-contents:active,
+.site-header-cart a.cart-contents:hover {
+  text-decoration: none !important;
+  color: #fff !important; }
+
 /*footer*/
 #zoom-social-icons-widget-2 {
   text-align: center;
@@ -96,16 +101,26 @@ button.menu-toggle {
   background-color: initial;
   padding: 0; }
 
-/*shop page*/
-/*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
-.storefront-sorting {
+/*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
+.label {
+  display: block;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit; }
+
+/*hide description tab on product page*/
+.woocommerce-tabs ul.tabs .description_tab {
   display: none; }
 
-/* woocommerce and woocommerce theme overrides */
-.woocommerce-info,
-.woocommerce-error,
-.woocommerce-message {
-  border-left: none; }
+/*hide upsells on product page (below product description)*/
+.up-sells {
+  display: none; }
+
+/*make proudct page and shop page full width after hiding sidebar on both pages*/
+.single-product #primary,
+.post-type-archive-product #primary {
+  width: 100%; }
 
 a:focus,
 button:focus,
@@ -118,15 +133,13 @@ a.added_to_cart:focus,
 a.add_to_cart_button:focus {
   color: inherit !important; }
 
-.storefront-handheld-footer-bar {
-  box-shadow: none; }
-
 .added_to_cart,
 .button,
 button,
 input[type=button],
 input[type=reset],
-input[type=submit] {
+input[type=submit],
+.storefront-handheld-footer-bar {
   box-shadow: none; }
 
 .checkout-button:focus,
@@ -138,24 +151,30 @@ input[type=submit] {
 .button.checkout-button:focus {
   text-decoration: none; }
 
-#payment .place-order {
-  padding-left: 0;
-  padding-right: 0; }
-
 .cart-subtotal,
 .order-total {
   background-color: #f8f8f8; }
+
+/*shop page*/
+/*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
+.storefront-sorting {
+  display: none; }
+
+/* woocommerce and woocommerce theme overrides */
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-message {
+  border-left: none; }
+
+#payment .place-order {
+  padding-left: 0;
+  padding-right: 0; }
 
 #payment .payment_methods li {
   padding: 1em 1.41575em !important; }
 
 #payment .payment_methods > li:hover {
   background-color: #fafafa; }
-
-.site-header-cart a.cart-contents:active,
-.site-header-cart a.cart-contents:hover {
-  text-decoration: none !important;
-  color: #fff !important; }
 
 #payment .place-order {
   padding-bottom: 0; }
@@ -165,30 +184,9 @@ input[type=submit] {
   text-transform: lowercase;
   color: #666; }
 
-/*hide description tab on product page*/
-.woocommerce-tabs ul.tabs .description_tab {
-  display: none; }
-
-/*hide upsells on product page (below product description)*/
-.up-sells {
-  display: none; }
-
 /*my account login page*/
 label[for="rememberme"] {
   margin-top: 1em; }
-
-/*make proudct page and shop page full width after hiding sidebar on both pages*/
-.single-product #primary,
-.post-type-archive-product #primary {
-  width: 100%; }
-
-/*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
-.label {
-  display: block;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  text-align: inherit; }
 
 @media screen and (min-width: 768px) {
   /*checkout page*/

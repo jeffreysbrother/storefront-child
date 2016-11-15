@@ -21,3 +21,13 @@
 	background-color: initial;
 	padding: 0;
 }
+
+
+/*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
+.label {
+	display: block;
+	padding: 0;
+	font-size: inherit;
+	color: inherit;
+	text-align: inherit;
+}

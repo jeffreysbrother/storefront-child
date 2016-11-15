@@ -1,0 +1,30 @@
+a:focus,
+button:focus,
+button.menu-toggle:focus,
+button.menu-toggle span {
+	outline: none!important;
+	color: inherit!important;
+}
+a.added_to_cart:focus,
+a.add_to_cart_button:focus {
+	color: inherit!important;
+}
+
+.added_to_cart,
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+.storefront-handheld-footer-bar {
+	box-shadow: none;
+}
+.checkout-button:focus,
+#place_order:focus {
+	outline: none;
+	color: #fff!important;
+}
+.button.checkout-button:hover,
+.button.checkout-button:focus {
+	text-decoration: none;
+}

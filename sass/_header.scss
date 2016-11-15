@@ -4,3 +4,9 @@
 	text-decoration: none;
 	color: #fff;
 }
+
+.site-header-cart a.cart-contents:active,
+.site-header-cart a.cart-contents:hover {
+	text-decoration: none!important;
+	color: #fff!important;
+}

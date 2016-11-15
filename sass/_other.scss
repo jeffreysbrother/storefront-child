@@ -11,56 +11,19 @@
 .woocommerce-message {
 	border-left: none;
 }
-a:focus,
-button:focus,
-button.menu-toggle:focus,
-button.menu-toggle span {
-	outline: none!important;
-	color: inherit!important;
-}
-a.added_to_cart:focus,
-a.add_to_cart_button:focus {
-	color: inherit!important;
-}
-.storefront-handheld-footer-bar {
-	box-shadow: none;
-}
-.added_to_cart,
-.button,
-button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
-	box-shadow: none;
-}
-.checkout-button:focus,
-#place_order:focus {
-	outline: none;
-	color: #fff!important;
-}
-.button.checkout-button:hover,
-.button.checkout-button:focus {
-	text-decoration: none;
-}
+
 #payment .place-order {
 	padding-left: 0;
 	padding-right: 0;
 }
-.cart-subtotal,
-.order-total {
-	background-color: #f8f8f8;
-}
+
 #payment .payment_methods li {
 	padding: 1em 1.41575em!important;
 }
 #payment .payment_methods > li:hover {
 	background-color: #fafafa;
 }
-.site-header-cart a.cart-contents:active,
-.site-header-cart a.cart-contents:hover {
-	text-decoration: none!important;
-	color: #fff!important;
-}
+
 #payment .place-order {
 	padding-bottom: 0;
 }
@@ -71,33 +34,10 @@ input[type=submit] {
     color: #666;
 }
 
-/*hide description tab on product page*/
-.woocommerce-tabs ul.tabs .description_tab {
-	display: none;
-}
 
-/*hide upsells on product page (below product description)*/
-.up-sells {
-	display: none;
-}
 
 /*my account login page*/
 label[for="rememberme"] {
 	margin-top: 1em;
 }
-
-/*make proudct page and shop page full width after hiding sidebar on both pages*/
-.single-product #primary,
-.post-type-archive-product #primary {
-	width: 100%;
-}
-
-
-/*Bootstrap overrides (to prevent conflict with WooCommerce), primarily on blog/ page */
-.label {
-	display: block;
-	padding: 0;
-	font-size: inherit;
-	color: inherit;
-	text-align: inherit;
-}
+ 
