@@ -1,0 +1,27 @@
+/*front page, NASTY*/
+
+.nasty-image {
+	background: url('images/people-mirror.JPG') no-repeat;
+	background-size: cover;
+}
+.block-orange {
+	background-color: orange!important;
+}
+.block-orange h1,
+.block-orange h4 {
+	/*color: #eee!important;*/
+}
+.pink {
+	background-color: pink;
+	/*text-decoration: underline;*/
+	border-top: 4px dotted lightgreen;
+	font-weight: 100;
+	color: red;
+	border-bottom: 1px solid blue;
+	border-radius: 50px;
+}
+.extending {
+	display: inline;
+	background-color: lightblue;
+	padding-bottom: 35px;
+}

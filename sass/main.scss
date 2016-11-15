@@ -2,75 +2,15 @@
 @import 'desktop-nav';
 @import 'mobile-nav';
 @import 'front-page-plain';
+@import 'front-page-nasty';
+@import 'header';
+@import 'footer';
 
 
 
 
 
 
-
-
-
-
-/*front page, NASTY*/
-/*.no-line {
-	border-bottom: 0!important;
-}*/
-.nasty-image {
-	background: url('images/people-mirror.JPG') no-repeat;
-	background-size: cover;
-}
-.block-orange {
-	background-color: orange!important;
-}
-.block-orange h1,
-.block-orange h4 {
-	/*color: #eee!important;*/
-}
-.pink {
-	background-color: pink;
-	/*text-decoration: underline;*/
-	border-top: 4px dotted lightgreen;
-	font-weight: 100;
-	color: red;
-	border-bottom: 1px solid blue;
-	border-radius: 50px;
-}
-.extending {
-	display: inline;
-	background-color: lightblue;
-	padding-bottom: 35px;
-}
-
-
-/*header*/
-.site-title a:hover,
-.site-title a:focus {
-	text-decoration: none;
-	color: #fff;
-}
-
-
-
-/*footer*/
-#zoom-social-icons-widget-2 {
-	text-align: center;
-	margin: 0;
-}
-.footer-widgets {
-	border-bottom: none;
-	padding: 0;
-}
-/*get rid of strange padding and margin*/
-.widget .zoom-social-icons-list--no-labels.zoom-social-icons-list--without-canvas {
-	margin: 0;
-}
-.site-footer {
-	padding: 40px;
-/*	position: fixed;
-	bottom: 0;
-	width: 100%;*/
-}
 
 
 /*404 page*/

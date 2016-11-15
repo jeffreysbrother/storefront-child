@@ -30,9 +30,6 @@ button.menu-toggle {
 	color: #bbb;
 }*/
 /*front page, NASTY*/
-/*.no-line {
-	border-bottom: 0!important;
-}*/
 .nasty-image {
   background: url("images/people-mirror.JPG") no-repeat;
   background-size: cover; }
@@ -78,10 +75,7 @@ button.menu-toggle {
   margin: 0; }
 
 .site-footer {
-  padding: 40px;
-  /*	position: fixed;
-	bottom: 0;
-	width: 100%;*/ }
+  padding: 40px; }
 
 /*404 page*/
 .error-page {
