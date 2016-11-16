@@ -27,6 +27,33 @@ But this results in my child theme CSS being duplicated down the page ... and th
 
 To fix this, the only styles I've decided to enqueue are Bootstrap styles. It appears that the parent theme and child theme CSS load correctly without doing anything.
 
+***Edit**: Enqueuing only Bootstrap was not the best idea because this method was resulting in stylesheets being enqueued in the wrong order. Here is what I've ended up with: 
+
+```php
+// this will dequeue the main styles.css file, since I'm using the compiled scss in css/main.css
+function project_dequeue_styles() {
+    wp_dequeue_style( 'storefront-child-style' );
+    wp_deregister_style( 'storefront-child-style' );
+}
+add_action( 'wp_print_styles', 'project_dequeue_styles' );
+
+
+
+function hondaross_enqueue_styles() {
+    // $parent_style = 'parent-style'; 
+    wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
+    // wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/css/main.css',
+        array( 'storefront-style', 'bootstrap_styles' ),
+        wp_get_theme()->get('Version')
+    );
+}
+add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles' );
+```
+
+I believe this is *still* not perfect because some WooCommerce CSS (internal and external) is being enqueued *after* my custom styles.
+
 ### Stripe
 
 To work in live mode, Stripe requires an SSL certificate. This might be the best option, if we don't mind paying the monthly fee required for a dedicated IP address and an SSL cert. 
