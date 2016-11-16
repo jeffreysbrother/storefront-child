@@ -29,7 +29,7 @@ To fix this, the only styles I've decided to enqueue are Bootstrap styles. It ap
 
 ### stripe
 
-To work in live mode, Stripe requires an SSL certificate.
+To work in live mode, Stripe requires an SSL certificate. This might be the best option, if we don't mind paying the monthly fee required for a dedicated IP address and an SSL cert. 
 
 ### paypal advanced
 
@@ -37,7 +37,7 @@ I purchased a plugin for PayPal advanced, and was approved ... but I can't seem 
 
 ### PayPal (powered by Braintree)
 
-Looks like this is ready to go, but I need to send some documents if I was to receive monies.
+Looks like this is ready to go, but I need to send some documents if I was to receive monies. Also requires SSL certificate (which, in turn, requires a dedicated IP address).
 
 ### layout, styles
 
