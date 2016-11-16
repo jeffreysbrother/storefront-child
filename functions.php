@@ -8,21 +8,6 @@
 
 
 
-add_action( 'wp_enqueue_scripts', 'crunchify_disable_woocommerce_loading_css_js' );
-function crunchify_disable_woocommerce_loading_css_js() {
-	// Check if WooCommerce plugin is active
-	if( function_exists( 'is_woocommerce' ) ){
-		// Check if it's any of WooCommerce page
-		if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) { 		
-			## Dequeue WooCommerce styles
-			wp_dequeue_style('woocommerce-layout'); 
-			wp_dequeue_style('woocommerce-general'); 
-			wp_dequeue_style('woocommerce-smallscreen'); 	
-		}
-	}	
-}
-
-
 function hondaross_enqueue_styles() {
     // $parent_style = 'parent-style'; 
     // wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
