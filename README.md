@@ -31,6 +31,14 @@ To fix this, the only styles I've decided to enqueue are Bootstrap styles. It ap
 
 To work in live mode, Stripe requires an SSL certificate.
 
+### paypal advanced
+
+I purchased a plugin for PayPal advanced, and was approved ... but I can't seem to log in to get started. Eh.
+
+### PayPal (powered by Braintree)
+
+Looks like this is ready to go, but I need to send some documents if I was to receive monies.
+
 ### layout, styles
 
 After switching to .scss, the compiled styles from css/ are getting enqueued BEFORE the parent theme styles. This needs to be fixed.
