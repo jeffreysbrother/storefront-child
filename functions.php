@@ -1,12 +1,11 @@
 <?php
 
+// this will dequeue the main styles.css file, since I'm using the compiled scss in css/main.css
 function project_dequeue_styles() {
     wp_dequeue_style( 'storefront-child-style' );
     wp_deregister_style( 'storefront-child-style' );
 }
 add_action( 'wp_print_styles', 'project_dequeue_styles' );
-
-
 
 
 
