@@ -27,13 +27,13 @@ But this results in my child theme CSS being duplicated down the page ... and th
 
 To fix this, the only styles I've decided to enqueue are Bootstrap styles. It appears that the parent theme and child theme CSS load correctly without doing anything.
 
-### stripe
+### Stripe
 
 To work in live mode, Stripe requires an SSL certificate. This might be the best option, if we don't mind paying the monthly fee required for a dedicated IP address and an SSL cert. 
 
-### paypal advanced
+### PayPal Advanced
 
-I purchased a plugin for PayPal advanced, and was approved ... but I can't seem to log in to get started. Eh.
+I purchased a plugin for PayPal advanced, and was approved ... but I can't seem to log in to get started. Eh. On a positive note, an SSL certificate is NOT required to use PayPal Advanced. See [this](https://docs.woocommerce.com/document/paypal-payments-advanced-2/) link for more info.
 
 ### PayPal (powered by Braintree)
 
