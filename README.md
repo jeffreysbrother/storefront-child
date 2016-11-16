@@ -34,3 +34,7 @@ To work in live mode, Stripe requires an SSL certificate.
 ### layout, styles
 
 After switching to .scss, the compiled styles from css/ are getting enqueued BEFORE the parent theme styles. This needs to be fixed.
+
+### other
+
+See Trello for a more complete list of pending tasks and issues.
