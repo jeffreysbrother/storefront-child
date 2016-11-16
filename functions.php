@@ -1,13 +1,14 @@
 <?php
 
-// function project_dequeue_styles() {
-//     wp_dequeue_style( 'storefront-style' );
-//     wp_deregister_style( 'storefront-style' );
-// }
-// add_action( 'wp_print_styles', 'project_dequeue_styles' );
+function project_dequeue_styles() {
+    wp_dequeue_style( 'storefront-child-style' );
+    wp_deregister_style( 'storefront-child-style' );
+}
+add_action( 'wp_print_styles', 'project_dequeue_styles' );
 
 
-add_filter( 'storefront-child-style', '__return_empty_array' );
+
+
 
 function hondaross_enqueue_styles() {
     // $parent_style = 'parent-style'; 
