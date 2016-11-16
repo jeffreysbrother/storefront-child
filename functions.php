@@ -7,6 +7,7 @@
 // add_action( 'wp_print_styles', 'project_dequeue_styles' );
 
 
+add_filter( 'storefront-child-style', '__return_empty_array' );
 
 function hondaross_enqueue_styles() {
     // $parent_style = 'parent-style'; 
