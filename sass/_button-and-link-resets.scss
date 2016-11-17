@@ -3,7 +3,6 @@ button:focus,
 button.menu-toggle:focus,
 button.menu-toggle span {
 	outline: none!important;
-	// color: inherit!important;
 }
 a.added_to_cart:focus,
 a.add_to_cart_button:focus {
@@ -27,4 +26,9 @@ input[type=submit],
 .button.checkout-button:hover,
 .button.checkout-button:focus {
 	text-decoration: none;
+}
+
+// this affects the View Cart button on the Shop page and maybe elsewhere
+.added-to-cart.wc-forward {
+	background-color: #0f834d!important;
 }

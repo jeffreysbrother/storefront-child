@@ -10,9 +10,6 @@ a:hover {
 #secondary {
   margin-top: 25px; }
 
-.added-to-cart.wc-forward {
-  background-color: #0f834d !important; }
-
 /*desktop navigation*/
 .storefront-primary-navigation {
   background-color: inherit; }
@@ -194,6 +191,9 @@ input[type=submit],
 .button.checkout-button:hover,
 .button.checkout-button:focus {
   text-decoration: none; }
+
+.added-to-cart.wc-forward {
+  background-color: #0f834d !important; }
 
 .cart-subtotal,
 .order-total {
