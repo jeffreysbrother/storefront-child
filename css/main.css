@@ -11,7 +11,7 @@ a:hover {
   margin-top: 25px; }
 
 .added-to-cart.wc-forward {
-  background-color: #0f834d; }
+  background-color: #0f834d !important; }
 
 /*desktop navigation*/
 .storefront-primary-navigation {
