@@ -13,6 +13,8 @@ add_action( 'init', 'hondaross_remove_storefront_standard_functionality' );
 function project_dequeue_styles() {
     wp_dequeue_style( 'storefront-child-style' );
     wp_deregister_style( 'storefront-child-style' );
+    wp_dequeue_style( 'storefront-woocommerce-style' );
+    wp_deregister_style( 'storefront-woocommerce-style' );
 }
 add_action( 'wp_print_styles', 'project_dequeue_styles' );
 
