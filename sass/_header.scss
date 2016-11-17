@@ -21,11 +21,11 @@ ul.menu li.current-menu-item > a {
 	background-color: #2c2d33;
 }
 
-.widget_shopping_cart .buttons .button {
+.widget_shopping_cart .buttons .button.checkout {
 	background-color: #e6e6e6;
 	color: #2c2d33;
 }
 
 .product_list_widget a:hover {
-	color: #e6e6e6;
+	color: #e6e6e6!important;
 }
