@@ -121,6 +121,9 @@ button.menu-toggle {
 .post-type-archive-product #primary {
   width: 100%; }
 
+textarea {
+  padding: .6180469716em; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
