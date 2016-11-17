@@ -13,11 +13,11 @@ add_action( 'wp_enqueue_scripts', 'wpse_173601_enqueue_scripts' );
 // disabling this appears to prevent the "your order" section from floating
 // when the viewport is short and you scroll.
 // oops! this disabled the cart preview you see on hovering on the nav
-function de_script() {
-    wp_dequeue_script( 'wc-cart-fragments' );
-    return true;
-}
-add_action( 'wp_print_scripts', 'de_script', 100 );
+// function de_script() {
+//     wp_dequeue_script( 'wc-cart-fragments' );
+//     return true;
+// }
+// add_action( 'wp_print_scripts', 'de_script', 100 );
 
 
 
