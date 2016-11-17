@@ -2,3 +2,8 @@
 .order-total {
 	background-color: #f8f8f8;
 }
+
+// get rid of black bar that appeared after dequeueing woocommerce/storefront styles
+table.cart td.actions {
+	border-top: 0;
+}

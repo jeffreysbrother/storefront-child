@@ -175,6 +175,9 @@ input[type=submit],
 .order-total {
   background-color: #f8f8f8; }
 
+table.cart td.actions {
+  border-top: 0; }
+
 /*shop page*/
 /*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
 .storefront-sorting {
