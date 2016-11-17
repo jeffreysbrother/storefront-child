@@ -88,7 +88,7 @@ ul.menu li.current-menu-item > a {
     width: 75%;
     margin-right: 0; }
   .woocommerce-active .site-header .site-header-cart {
-    wdith: 25px; } }
+    width: 25%; } }
 
 /*footer*/
 #zoom-social-icons-widget-2 {
