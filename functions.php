@@ -1,5 +1,16 @@
 <?php
 
+
+ // Move jQuery to the footer. 
+function wpse_173601_enqueue_scripts() {
+    wp_scripts()->add_data( 'jquery', 'group', 1 );
+    wp_scripts()->add_data( 'jquery-core', 'group', 1 );
+    wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
+}
+add_action( 'wp_enqueue_scripts', 'wpse_173601_enqueue_scripts' );
+
+
+
 // this removes some inline styles but not all woocommerce styles, I guess
 function hondaross_remove_storefront_standard_functionality() {
 	set_theme_mod('storefront_styles', '');
