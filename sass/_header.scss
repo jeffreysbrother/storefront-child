@@ -21,9 +21,7 @@ ul.menu li.current-menu-item > a {
 	background-color: #2c2d33;
 }
 
-.widget_shopping_cart {
-	.button.checkout {
-		background-color: #e6e6e6;
-    	color: #2c2d33;
-	}
+.widget_shopping_cart .buttons .button {
+	background-color: #e6e6e6;
+	color: #2c2d33;
 }
