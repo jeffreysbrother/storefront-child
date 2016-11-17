@@ -19,6 +19,9 @@ button.menu-toggle {
   border: none;
   padding: .6180469716em 1.41575em; }
 
+.site-title a {
+  vertical-align: middle; }
+
 /*front page, plain*/
 /*.sub-title {
 	color: #666;
