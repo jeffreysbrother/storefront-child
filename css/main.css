@@ -85,7 +85,7 @@ ul.menu li.current-menu-item > a {
   color: #e6e6e6 !important; }
 
 .widget_shopping_cart p.buttons {
-  padding: 1em; }
+  padding: 1em !important; }
 
 @media (min-width: 768px) {
   .woocommerce-active .site-header .main-navigation {
