@@ -4,6 +4,16 @@ add_filter( 'storefront_customizer_enabled', '__return_false' );
 add_filter( 'storefront_customizer_css', '__return_false' );
 add_filter( 'storefront_customizer_woocommerce_css', '__return_false' );
 
+
+function my_theme_remove_storefront_standard_functionality() {
+	//remove customizer inline styles from parent theme as I don't need it.
+	set_theme_mod('storefront_styles', '');
+	set_theme_mod('storefront_woocommerce_styles', '');  
+}
+add_action( 'init', 'my_theme_remove_storefront_standard_functionality' );
+
+
+
 // this will dequeue the main styles.css file, since I'm using the compiled scss in css/main.css
 function project_dequeue_styles() {
     wp_dequeue_style( 'storefront-child-style' );
