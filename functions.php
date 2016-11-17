@@ -11,6 +11,14 @@ add_action( 'wp_enqueue_scripts', 'wpse_173601_enqueue_scripts' );
 
 
 
+function de_script() {
+    wp_dequeue_script( 'wc-cart-fragments' );
+    return true;
+}
+add_action( 'wp_print_scripts', 'de_script', 100 );
+
+
+
 // this removes some inline styles but not all woocommerce styles, I guess
 function hondaross_remove_storefront_standard_functionality() {
 	set_theme_mod('storefront_styles', '');
