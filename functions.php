@@ -13,8 +13,8 @@ add_action( 'init', 'hondaross_remove_storefront_standard_functionality' );
 function project_dequeue_styles() {
     wp_dequeue_style( 'storefront-child-style' );
     wp_deregister_style( 'storefront-child-style' );
-    wp_dequeue_style( 'storefront-woocommerce-style' );
-    wp_deregister_style( 'storefront-woocommerce-style' );
+    // wp_dequeue_style( 'storefront-woocommerce-style' );
+    // wp_deregister_style( 'storefront-woocommerce-style' );
 }
 add_action( 'wp_print_styles', 'project_dequeue_styles' );
 
@@ -26,7 +26,7 @@ function hondaross_enqueue_styles() {
     // wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/css/main.css',
-        array( 'storefront-style', 'bootstrap_styles' ),
+        array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style' ),
         wp_get_theme()->get('Version')
     );
 }
