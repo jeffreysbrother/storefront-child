@@ -219,6 +219,9 @@ table.cart td.actions {
 label[for="rememberme"] {
   margin-top: 1em; }
 
+.woocommerce-checkout-payment {
+  background-color: #fff; }
+
 @media screen and (min-width: 768px) {
   /*checkout page*/
   #billing_first_name_field,
