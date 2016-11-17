@@ -69,6 +69,9 @@ ul.menu li.current-menu-item > a {
   text-decoration: none !important;
   color: #fff !important; }
 
+.sub-menu {
+  background-color: #2c2d33; }
+
 /*footer*/
 #zoom-social-icons-widget-2 {
   text-align: center;
