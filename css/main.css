@@ -73,6 +73,10 @@ ul.menu li.current-menu-item > a {
 .widget_shopping_cart {
   background-color: #2c2d33; }
 
+.widget_shopping_cart .button.checkout {
+  background-color: #e6e6e6;
+  color: #2c2d33; }
+
 /*footer*/
 #zoom-social-icons-widget-2 {
   text-align: center;
