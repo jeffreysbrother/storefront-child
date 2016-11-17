@@ -42,6 +42,12 @@ ul.menu li.current-menu-item > a {
 	.product_list_widget img {
 		display: none!important;
 	}
+	// decrease padding more when viewport gets smaller
+	.site-header .widget_shopping_cart li,
+	.site-header .widget_shopping_cart p.buttons,
+	.site-header .widget_shopping_cart p.total {
+		padding: 6em!important;
+	}
 }
 
 // make right portion of header larger (cart preview) and left nav part smaller

@@ -91,7 +91,11 @@ ul.menu li.current-menu-item > a {
 
 @media screen and (max-width: 1000px) {
   .product_list_widget img {
-    display: none !important; } }
+    display: none !important; }
+  .site-header .widget_shopping_cart li,
+  .site-header .widget_shopping_cart p.buttons,
+  .site-header .widget_shopping_cart p.total {
+    padding: 6em !important; } }
 
 @media (min-width: 768px) {
   .woocommerce-active .site-header .main-navigation {
