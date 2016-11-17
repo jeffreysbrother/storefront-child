@@ -37,6 +37,13 @@ ul.menu li.current-menu-item > a {
 	padding: 1em!important;
 }
 
+// hide images in cart drop-down and make content area 100% width
+@media screen and (max-width: 1000px) {
+	.product_list_widget img {
+		display: none!important;
+	}
+}
+
 // make right portion of header larger (cart preview) and left nav part smaller
 // this will increase size of the cart dropdown
 @media (min-width: 768px) {
