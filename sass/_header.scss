@@ -30,6 +30,11 @@ ul.menu li.current-menu-item > a {
 	color: #e6e6e6!important;
 }
 
+// make padding in cart dropdown more uniform
+.widget_shopping_cart p.buttons {
+	padding: 1em;
+}
+
 // make right portion of header larger (cart preview) and left nav part smaller
 // this will increase size of the cart dropdown
 @media (min-width: 768px) {

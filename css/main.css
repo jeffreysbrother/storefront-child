@@ -84,6 +84,9 @@ ul.menu li.current-menu-item > a {
 .product_list_widget a:hover {
   color: #e6e6e6 !important; }
 
+.widget_shopping_cart p.buttons {
+  padding: 1em; }
+
 @media (min-width: 768px) {
   .woocommerce-active .site-header .main-navigation {
     width: 75%;
