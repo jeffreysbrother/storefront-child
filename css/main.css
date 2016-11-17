@@ -95,7 +95,7 @@ ul.menu li.current-menu-item > a {
   .site-header .widget_shopping_cart li,
   .site-header .widget_shopping_cart p.buttons,
   .site-header .widget_shopping_cart p.total {
-    padding: 6em !important; } }
+    padding: 0.6em !important; } }
 
 @media (min-width: 768px) {
   .woocommerce-active .site-header .main-navigation {
