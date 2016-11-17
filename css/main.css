@@ -10,6 +10,9 @@ a:hover {
 #secondary {
   margin-top: 25px; }
 
+.added-to-cart.wc-forward {
+  background-color: #0f834d; }
+
 /*desktop navigation*/
 .storefront-primary-navigation {
   background-color: inherit; }
