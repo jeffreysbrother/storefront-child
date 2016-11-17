@@ -55,7 +55,8 @@ button.menu-toggle {
   padding-bottom: 35px; }
 
 /*header*/
-.site-header a {
+.site-header a,
+ul.menu li.current-menu-item > a {
   color: #e6e6e6; }
 
 .site-title a:hover,

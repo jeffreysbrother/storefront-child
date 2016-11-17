@@ -1,5 +1,6 @@
 /*header*/
-.site-header a {
+.site-header a,
+ul.menu li.current-menu-item > a {
 	color: #e6e6e6;
 }
 
