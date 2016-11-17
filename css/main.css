@@ -77,6 +77,9 @@ ul.menu li.current-menu-item > a {
   background-color: #e6e6e6;
   color: #2c2d33; }
 
+.product_list_widget a:hover {
+  color: #e6e6e6; }
+
 /*footer*/
 #zoom-social-icons-widget-2 {
   text-align: center;
