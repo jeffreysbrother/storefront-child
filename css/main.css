@@ -105,6 +105,7 @@ ul.menu li.current-menu-item > a {
   margin: 0 !important; }
 
 .site-footer {
+  background-color: inherit;
   padding: 40px; }
 
 /*404 page*/
