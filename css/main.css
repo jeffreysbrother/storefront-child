@@ -83,6 +83,13 @@ ul.menu li.current-menu-item > a {
 .product_list_widget a:hover {
   color: #e6e6e6 !important; }
 
+@media (min-width: 768px) {
+  .woocommerce-active .site-header .main-navigation {
+    width: 75%;
+    margin-right: 0; }
+  .woocommerce-active .site-header .site-header-cart {
+    wdith: 25px; } }
+
 /*footer*/
 #zoom-social-icons-widget-2 {
   text-align: center;

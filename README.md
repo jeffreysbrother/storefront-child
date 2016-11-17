@@ -77,3 +77,5 @@ See Trello for a more complete list of pending tasks and issues.
 ### more issues
 
 Compare nav on blog page ... to the nav on a product page. They're different. Same goes for the footer. I'm also seeing the text "showing the single result" on the product page, despite having hid it earlier (this was previously a sorting dropdown, I believe).
+
+After enqueueing "storefront-woocommerce-style" as a dependency of my main child theme CSS (or, perhaps after removing some other storefront styles), the hamburger in the mobile nav disappeared. Maybe we should replace that anyway.

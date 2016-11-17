@@ -29,3 +29,18 @@ ul.menu li.current-menu-item > a {
 .product_list_widget a:hover {
 	color: #e6e6e6!important;
 }
+
+// make right portion of header larger (cart preview) and left nav part smaller
+// this will increase size of the cart dropdown
+@media (min-width: 768px) {
+	.woocommerce-active .site-header .main-navigation {
+		width: 75%;
+		margin-right: 0;
+	}
+	.woocommerce-active .site-header .site-header-cart {
+		wdith: 25px;
+	}
+}
+
+
+
