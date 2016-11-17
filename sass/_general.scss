@@ -4,6 +4,10 @@ body {
 	word-wrap: normal;
 }
 
+a:hover {
+	color: inherit;
+}
+
 .content-area,
 #secondary {
 	margin-top: 25px;

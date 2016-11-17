@@ -3,6 +3,9 @@ body {
   font-size: 16px;
   word-wrap: normal; }
 
+a:hover {
+  color: inherit; }
+
 .content-area,
 #secondary {
   margin-top: 25px; }
