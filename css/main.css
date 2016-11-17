@@ -16,7 +16,8 @@ a:hover {
 
 /*mobile navigation*/
 button.menu-toggle {
-  border: none; }
+  border: none;
+  padding: .6180469716em 1.41575em; }
 
 /*front page, plain*/
 /*.sub-title {
