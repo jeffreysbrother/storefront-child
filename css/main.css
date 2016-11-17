@@ -84,7 +84,9 @@ ul.menu li.current-menu-item > a {
 .product_list_widget a:hover {
   color: #e6e6e6 !important; }
 
-.widget_shopping_cart p.buttons {
+.site-header .widget_shopping_cart li,
+.site-header .widget_shopping_cart p.buttons,
+.site-header .widget_shopping_cart p.total {
   padding: 1em !important; }
 
 @media (min-width: 768px) {

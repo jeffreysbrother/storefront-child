@@ -31,7 +31,9 @@ ul.menu li.current-menu-item > a {
 }
 
 // make padding in cart dropdown more uniform
-.widget_shopping_cart p.buttons {
+.site-header .widget_shopping_cart li,
+.site-header .widget_shopping_cart p.buttons,
+.site-header .widget_shopping_cart p.total {
 	padding: 1em!important;
 }
 
