@@ -1,16 +1,11 @@
 <?php
 
-add_filter( 'storefront_customizer_enabled', '__return_false' );
-add_filter( 'storefront_customizer_css', '__return_false' );
-add_filter( 'storefront_customizer_woocommerce_css', '__return_false' );
-
-
-function my_theme_remove_storefront_standard_functionality() {
-	//remove customizer inline styles from parent theme as I don't need it.
+// this removes some inline styles but not all woocommerce styles, I guess
+function hondaross_remove_storefront_standard_functionality() {
 	set_theme_mod('storefront_styles', '');
 	set_theme_mod('storefront_woocommerce_styles', '');  
 }
-add_action( 'init', 'my_theme_remove_storefront_standard_functionality' );
+add_action( 'init', 'hondaross_remove_storefront_standard_functionality' );
 
 
 
