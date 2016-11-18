@@ -102,17 +102,7 @@ ul.menu li.current-menu-item > a {
     width: 75%;
     margin-right: 0; }
   .woocommerce-active .site-header .site-header-cart {
-    width: 25%; }
-  .main-navigation ul ul,
-  .secondary-navigation ul ul {
-    left: 0;
-    display: none; }
-  .main-navigation ul li.focus > ul,
-  .main-navigation ul li:hover > ul,
-  .secondary-navigation ul li.focus > ul,
-  .secondary-navigation ul li:hover > ul {
-    left: inherit;
-    display: block; } }
+    width: 25%; } }
 
 /*footer*/
 #zoom-social-icons-widget-2 {
