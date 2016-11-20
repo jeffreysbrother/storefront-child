@@ -14,6 +14,7 @@ function child_manage_woocommerce_styles() {
 		 if ( is_page_template( 'template-front-nasty.php' ) ) {
 			 wp_dequeue_style( 'storefront-woocommerce-style' );
 			 wp_dequeue_style( 'jvcf7_style' );
+			 wp_dequeue_style( 'mashsb-styles' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
 			 wp_deregister_script( 'jquery-blockui' );
