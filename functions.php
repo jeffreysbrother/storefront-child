@@ -15,10 +15,7 @@ function child_manage_woocommerce_styles() {
 	if ( function_exists( 'is_woocommerce' ) ) {
 		//dequeue scripts and styles
 		if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-			wp_dequeue_style( 'woocommerce_frontend_styles' );
-			wp_dequeue_style( 'woocommerce_fancybox_styles' );
-			wp_dequeue_style( 'woocommerce_chosen_styles' );
-			wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
+			add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 			wp_dequeue_script( 'wc_price_slider' );
 			wp_dequeue_script( 'wc-single-product' );
 			wp_dequeue_script( 'wc-add-to-cart' );
@@ -35,8 +32,6 @@ function child_manage_woocommerce_styles() {
 			wp_dequeue_script( 'jquery-placeholder' );
 			wp_dequeue_script( 'fancybox' );
 			wp_dequeue_script( 'jqueryui' );
-			wp_dequeue_style( 'woocommerce-layout' );
-            wp_dequeue_style( 'woocommerce-smallscreen' );
 		}
 	}
 
