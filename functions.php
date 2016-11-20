@@ -16,6 +16,7 @@ function child_manage_woocommerce_styles() {
 	 //dequeue scripts and styles
 		 if ( is_page_template( 'template-front-nasty.php' ) ) {
 			 wp_dequeue_style( 'storefront-woocommerce-style' );
+			 wp_dequeue_style( 'jvcf7_style' );
 			 // wp_dequeue_style( 'woocommerce_fancybox_styles' );
 			 // wp_dequeue_style( 'woocommerce_chosen_styles' );
 			 // wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
@@ -35,6 +36,7 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_script( 'jquery-placeholder' );
 			 wp_dequeue_script( 'fancybox' );
 			 wp_dequeue_script( 'jqueryui' );
+			 // this one below works
 			 wp_dequeue_script( 'storefront-header-cart' );
 		 }
 	 }
