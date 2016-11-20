@@ -36,8 +36,11 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_script( 'jquery-placeholder' );
 			 wp_dequeue_script( 'fancybox' );
 			 wp_dequeue_script( 'jqueryui' );
-			 // this one below works
+			 // these ones below work
 			 wp_dequeue_script( 'storefront-header-cart' );
+			 wp_dequeue_script( 'jquery-form' );
+			 wp_dequeue_script( 'jvcf7_jquery_validate' );
+			 wp_dequeue_script( 'jvcf7_validation_custom' );
 		 }
 	 }
  
