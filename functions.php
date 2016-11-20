@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Optimize WooCommerce Scripts
  * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
@@ -10,37 +8,21 @@ add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
 function child_manage_woocommerce_styles() {
 	 //remove generator meta tag
 	 remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
- 
 	 //first check that woo exists to prevent fatal errors
 	 if ( function_exists( 'is_woocommerce' ) ) {
-	 //dequeue scripts and styles
+	 	//dequeue scripts and styles
 		 if ( is_page_template( 'template-front-nasty.php' ) ) {
 			 wp_dequeue_style( 'storefront-woocommerce-style' );
 			 wp_dequeue_style( 'jvcf7_style' );
-			 // wp_dequeue_script( 'wc_price_slider' );
-			 // wp_dequeue_script( 'wc-single-product' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
-			 // wp_dequeue_script( 'wc-checkout' );
-			 // wp_dequeue_script( 'wc-add-to-cart-variation' );
-			 // wp_dequeue_script( 'wc-single-product' );
-			 // wp_dequeue_script( 'wc-cart' );
-			 // wp_dequeue_script( 'wc-chosen' );
-			 // wp_dequeue_script( 'woocommerce' );
-			 // wp_dequeue_script( 'prettyPhoto' );
-			 // wp_dequeue_script( 'prettyPhoto-init' );
 			 wp_deregister_script( 'jquery-blockui' );
-			 // wp_dequeue_script( 'jquery-placeholder' );
-			 // wp_dequeue_script( 'fancybox' );
-			 // wp_dequeue_script( 'jqueryui' );
-			 // these ones below work
 			 wp_dequeue_script( 'storefront-header-cart' );
 			 wp_dequeue_script( 'jquery-form' );
 			 wp_dequeue_script( 'jvcf7_jquery_validate' );
 			 wp_dequeue_script( 'jvcf7_validation_custom' );
 		 }
 	 }
- 
 }
 
 
@@ -51,17 +33,6 @@ function wpse_173601_enqueue_scripts() {
     wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
 }
 add_action( 'wp_enqueue_scripts', 'wpse_173601_enqueue_scripts' );
-
-
-// disabling this appears to prevent the "your order" section from floating
-// when the viewport is short and you scroll.
-// oops! Removing this disabled the cart preview you see on hovering on the nav
-
-// function de_script() {
-//     wp_dequeue_script( 'wc-cart-fragments' );
-//     return true;
-// }
-// add_action( 'wp_print_scripts', 'de_script', 100 );
 
 
 
