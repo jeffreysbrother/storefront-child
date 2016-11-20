@@ -35,6 +35,7 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_script( 'jquery-placeholder' );
 			 wp_dequeue_script( 'fancybox' );
 			 wp_dequeue_script( 'jqueryui' );
+			 wp_dequeue_script( 'storefront-header-cart' );
 		 }
 	 }
  
