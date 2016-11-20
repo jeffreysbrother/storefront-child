@@ -15,6 +15,9 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_style( 'storefront-woocommerce-style' );
 			 wp_dequeue_style( 'jvcf7_style' );
 			 wp_dequeue_style( 'mashsb-styles' );
+			 wp_dequeue_style( 'socicon' );
+			 wp_dequeue_style( 'genericons' );
+			 wp_dequeue_style( 'fontawesome' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
 			 wp_deregister_script( 'jquery-blockui' );
