@@ -14,7 +14,7 @@ function child_manage_woocommerce_styles() {
 	//first check that woo exists to prevent fatal errors
 	if ( function_exists( 'is_woocommerce' ) ) {
 		//dequeue scripts and styles
-		if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+		if ( ! is_cart() && ! is_checkout() ) {
 			wp_dequeue_script( 'wc_price_slider' );
 			wp_dequeue_script( 'wc-single-product' );
 			wp_dequeue_script( 'wc-add-to-cart' );
@@ -39,7 +39,7 @@ function child_manage_woocommerce_styles() {
 
 
 function woocommerce_dequeue_styles( $enqueue_styles ) {
-    if ( !is_woocommerce() && !is_cart() && !is_checkout() ) {
+    if ( !is_cart() && !is_checkout() ) {
         unset( $enqueue_styles['woocommerce-general'] );
         unset( $enqueue_styles['woocommerce-layout'] );
         unset( $enqueue_styles['woocommerce-smallscreen'] );
