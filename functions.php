@@ -15,10 +15,10 @@ function child_manage_woocommerce_styles() {
 	 if ( function_exists( 'is_woocommerce' ) ) {
 	 //dequeue scripts and styles
 		 if ( is_page_template( 'template-front-nasty.php' ) ) {
-			 wp_dequeue_style( 'woocommerce_frontend_styles' );
-			 wp_dequeue_style( 'woocommerce_fancybox_styles' );
-			 wp_dequeue_style( 'woocommerce_chosen_styles' );
-			 wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
+			 wp_dequeue_style( 'storefront-woocommerce-style' );
+			 // wp_dequeue_style( 'woocommerce_fancybox_styles' );
+			 // wp_dequeue_style( 'woocommerce_chosen_styles' );
+			 // wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
 			 wp_dequeue_script( 'wc_price_slider' );
 			 wp_dequeue_script( 'wc-single-product' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
