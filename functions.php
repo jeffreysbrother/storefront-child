@@ -26,6 +26,22 @@ function child_manage_woocommerce_styles() {
 }
 
 
+
+/**
+ * Remove Contact Form 7 scripts + styles unless we're on the contact page
+ * 
+ */
+add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
+
+function ac_remove_cf7_scripts() {
+	if ( !is_page('contact') ) {
+		wp_deregister_style( 'contact-form-7' );
+		wp_deregister_script( 'contact-form-7' );
+	}
+}
+
+
+
  // Move jQuery to the footer. 
 function wpse_173601_enqueue_scripts() {
     wp_scripts()->add_data( 'jquery', 'group', 1 );
