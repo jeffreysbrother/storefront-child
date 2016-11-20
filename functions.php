@@ -29,7 +29,7 @@ function child_manage_woocommerce_styles() {
 			 // wp_dequeue_script( 'woocommerce' );
 			 // wp_dequeue_script( 'prettyPhoto' );
 			 // wp_dequeue_script( 'prettyPhoto-init' );
-			 wp_dequeue_script( 'jquery-blockui' );
+			 wp_deregister_script( 'jquery-blockui' );
 			 // wp_dequeue_script( 'jquery-placeholder' );
 			 // wp_dequeue_script( 'fancybox' );
 			 // wp_dequeue_script( 'jqueryui' );
