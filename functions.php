@@ -14,7 +14,7 @@ function child_manage_woocommerce_styles() {
  //first check that woo exists to prevent fatal errors
  if ( function_exists( 'is_woocommerce' ) ) {
  //dequeue scripts and styles
- if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+ if ( is_page_template( 'template-front-nasty' ) ) {
  wp_dequeue_style( 'woocommerce_frontend_styles' );
  wp_dequeue_style( 'woocommerce_fancybox_styles' );
  wp_dequeue_style( 'woocommerce_chosen_styles' );
