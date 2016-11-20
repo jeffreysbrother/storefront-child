@@ -15,7 +15,6 @@ function child_manage_woocommerce_styles() {
 	if ( function_exists( 'is_woocommerce' ) ) {
 		//dequeue scripts and styles
 		if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-			add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 			wp_dequeue_script( 'wc_price_slider' );
 			wp_dequeue_script( 'wc-single-product' );
 			wp_dequeue_script( 'wc-add-to-cart' );
@@ -36,6 +35,18 @@ function child_manage_woocommerce_styles() {
 	}
 
 }
+
+
+
+function woocommerce_dequeue_styles( $enqueue_styles ) {
+    if ( !is_woocommerce() && !is_cart() && !is_checkout() ) {
+        unset( $enqueue_styles['woocommerce-general'] );
+        unset( $enqueue_styles['woocommerce-layout'] );
+        unset( $enqueue_styles['woocommerce-smallscreen'] );
+    }
+    return $enqueue_styles;
+}
+add_filter( 'woocommerce_enqueue_styles', 'woocommerce_dequeue_styles' );
 
 
  // Move jQuery to the footer. 
