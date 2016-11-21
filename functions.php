@@ -65,7 +65,7 @@ function jc_remove_gravityforms_style() {
 	// wp_dequeue_style('gforms_bootstrapper_style');
 
 	// might need this gforms bootstrapper js
-	wp_dequeue_script('gforms_bootstrapper_js');
+	// wp_dequeue_script('gforms_bootstrapper_js');
 
 	// want to eliminate bootstrap.min.js...but how?
 }
