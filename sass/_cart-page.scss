@@ -12,8 +12,16 @@ table.cart td.actions {
 	background-color: #f8f8f8;
 }
 
-.shop_table.shop_table_responsive.cart thead {
-	border-bottom: 1px solid #eee;
+.shop_table.shop_table_responsive.cart {
+	thead {
+		border-bottom: 1px solid #eee;
+	}
+	tr {
+		border-bottom: 1px solid #eee;
+		&:last-of-type {
+			border-bottom: 1px solid red;
+		}
+	}
 }
 
 // if left to "separate", the borders will not show on the tables
@@ -21,9 +29,3 @@ table {
 	border-collapse: collapse;
 }
 
-.cart_item {
-	border-bottom: 1px solid #eee;
-}
-.cart_item:last-of-type {
-	border-bottom: 1px solid red;
-}
