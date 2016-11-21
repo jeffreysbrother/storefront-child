@@ -6,3 +6,8 @@
 #order_review .shop_table {
 	background-color: #f8f8f8;
 }
+
+// eliminate hover effect on "sorry no available payment methods" text
+#payment .payment_methods > li:hover {
+	background-color: inherit;
+}

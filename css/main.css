@@ -258,6 +258,9 @@ label[for="rememberme"] {
 #order_review .shop_table {
   background-color: #f8f8f8; }
 
+#payment .payment_methods > li:hover {
+  background-color: inherit; }
+
 @media screen and (min-width: 768px) {
   /*checkout page*/
   #billing_first_name_field,
