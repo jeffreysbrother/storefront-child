@@ -71,10 +71,6 @@ add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
 
 
 
-add_filter( ‘wpcf7_validate_configuration’, ‘__return_false’ );
-
-
-
  // Move jQuery to the footer. 
 function wpse_173601_enqueue_scripts() {
     wp_scripts()->add_data( 'jquery', 'group', 1 );
