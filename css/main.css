@@ -165,6 +165,9 @@ textarea {
   padding: .6180469716em;
   max-width: 313px; }
 
+@media screen and (max-width: 767px) {
+  max-width: 100%; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
