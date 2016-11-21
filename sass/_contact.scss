@@ -22,7 +22,8 @@
 		box-shadow: none;
 	}
 	.gform_wrapper textarea,
-	.gform_wrapper input {
+	.gform_wrapper input[type=text],
+	.gform_wrapper input[type=email] {
 		padding: 7px;
 	}
 }

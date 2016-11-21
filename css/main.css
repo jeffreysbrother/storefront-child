@@ -166,7 +166,8 @@ ul.menu li.current-menu-item > a {
   box-shadow: none; }
 
 .page-id-157 .gform_wrapper textarea,
-.page-id-157 .gform_wrapper input {
+.page-id-157 .gform_wrapper input[type=text],
+.page-id-157 .gform_wrapper input[type=email] {
   padding: 7px; }
 
 a:focus,
