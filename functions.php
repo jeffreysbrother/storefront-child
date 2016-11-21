@@ -60,6 +60,7 @@ add_action( 'wp_footer', 'jc_deregister_scripts' );
 function jc_remove_gravityforms_style() {
 	// wp_dequeue_style('gforms_css');
 	wp_dequeue_style('bootstrap_min_style');
+	wp_dequeue_style('gforms_bootstrapper_style');
 }
 add_action('wp_print_styles', 'jc_remove_gravityforms_style');
 
