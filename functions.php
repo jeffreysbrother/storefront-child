@@ -37,7 +37,7 @@ function get_rid_of_storefront_woo_css() {
 	// wp_dequeue_style( 'storefront-woocommerce-style', get_template_directory_uri() . '/assets/sass/woocommerce/woocommerce.css' );
 	add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 }
-add_action( 'init', 'get_rid_of_storefront_woo_css' );
+add_action( 'wp_enqueue_scripts', 'get_rid_of_storefront_woo_css' );
 
 
 
