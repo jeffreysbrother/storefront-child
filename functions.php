@@ -17,7 +17,6 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_style( 'mashsb-styles' );
 			 wp_dequeue_style( 'socicon' );
 			 wp_dequeue_style( 'genericons' );
-			 wp_dequeue_style( 'dashicons' );
 			 wp_dequeue_style( 'fontawesome' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
