@@ -16,7 +16,7 @@ table.cart td.actions {
 	thead {
 		border-bottom: 1px solid #eee;
 	}
-	.cart_item {
+	tr.cart_item {
 		border-bottom: 1px solid #eee;
 		&:nth-last-of-type(1) {
 			border-bottom: none;

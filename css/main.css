@@ -213,10 +213,10 @@ table.cart td.actions {
 .shop_table.shop_table_responsive.cart thead {
   border-bottom: 1px solid #eee; }
 
-.shop_table.shop_table_responsive.cart .cart_item {
+.shop_table.shop_table_responsive.cart tr.cart_item {
   border-bottom: 1px solid #eee; }
 
-.shop_table.shop_table_responsive.cart .cart_item:nth-last-of-type(1) {
+.shop_table.shop_table_responsive.cart tr.cart_item:nth-last-of-type(1) {
   border-bottom: none; }
 
 table {
