@@ -17,6 +17,10 @@
 // Gravity Form styles (also using Tim's Gravity Forms Bootstrapper)
 
 .page-id-157 {
+	.form-control:focus {
+		outline: 0;
+		box-shadow: none;
+	}
 	.gform_wrapper textarea,
 	.gform_wrapper input[type=text],
 	.gform_wrapper input[type=email] {

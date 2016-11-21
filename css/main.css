@@ -161,6 +161,10 @@ ul.menu li.current-menu-item > a {
 .post-type-archive-product #primary {
   width: 100%; }
 
+.page-id-157 .form-control:focus {
+  outline: 0;
+  box-shadow: none; }
+
 .page-id-157 .gform_wrapper textarea,
 .page-id-157 .gform_wrapper input[type=text],
 .page-id-157 .gform_wrapper input[type=email] {
