@@ -12,7 +12,7 @@ function child_manage_woocommerce_styles() {
 	 	//dequeue scripts and styles
 		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
 			 wp_dequeue_script( 'wc-add-to-cart' );
-			 wp_dequeue_script( 'wc-cart-fragments' );
+			 // wp_dequeue_script( 'wc-cart-fragments' );
 			 // wp_dequeue_script( 'storefront-header-cart' );
 			 
 		 }
