@@ -3,7 +3,6 @@
  * Optimize WooCommerce Scripts
  * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
  */
-add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
  
 function child_manage_woocommerce_styles() {
 	//remove generator meta tag
@@ -12,18 +11,27 @@ function child_manage_woocommerce_styles() {
 	if ( function_exists( 'is_woocommerce' ) ) {
 	 	//dequeue scripts and styles
 		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-			 wp_dequeue_style( 'mashsb-styles' );
-			 wp_dequeue_style( 'socicon' );
-			 wp_dequeue_style( 'genericons' );
-			 wp_dequeue_style( 'fontawesome' );
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
-			 wp_deregister_script( 'jquery-blockui' );
 			 wp_dequeue_script( 'storefront-header-cart' );
 			 
 		 }
 	 }
 }
+add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
+
+
+
+function lean_pages_dequeue() {
+	if ( is_page_template( 'template-front-nasty.php' ) ) {
+		wp_dequeue_style( 'mashsb-styles' );
+		wp_dequeue_style( 'socicon' );
+		wp_dequeue_style( 'genericons' );
+		wp_dequeue_style( 'fontawesome' );
+		wp_deregister_script( 'jquery-blockui' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 // NONE OF THIS WORKS TO GET RID OF woocommerce.css
@@ -49,18 +57,17 @@ add_action( 'wp_footer', 'my_deregister_scripts' );
  * Remove Contact Form 7 scripts + styles unless we're on the contact page
  * 
  */
-add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
-
 function ac_remove_cf7_scripts() {
 	if ( !is_page('contact') ) {
 		wp_deregister_style( 'contact-form-7' );
 		wp_deregister_script( 'contact-form-7' );
 		wp_dequeue_script( 'jquery-form' );
-		 wp_dequeue_script( 'jvcf7_jquery_validate' );
-		 wp_dequeue_script( 'jvcf7_validation_custom' );
-		 wp_dequeue_style( 'jvcf7_style' );
+		wp_dequeue_script( 'jvcf7_jquery_validate' );
+		wp_dequeue_script( 'jvcf7_validation_custom' );
+		wp_dequeue_style( 'jvcf7_style' );
 	}
 }
+add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
 
 
 
