@@ -255,6 +255,9 @@ label[for="rememberme"] {
 .woocommerce-checkout-payment {
   background-color: #fff; }
 
+#order_review .shop_table {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 768px) {
   /*checkout page*/
   #billing_first_name_field,
