@@ -18,7 +18,7 @@ table.cart td.actions {
 	}
 	tr {
 		border-bottom: 1px solid #eee;
-		&:last-of-type {
+		&:nth-last-of-type(2) {
 			border-bottom: 1px solid red;
 		}
 	}
