@@ -165,6 +165,9 @@ ul.menu li.current-menu-item > a {
   outline: 0;
   box-shadow: none; }
 
+.page-id-157 input, .page-id-157 textarea {
+  padding: 7px; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
