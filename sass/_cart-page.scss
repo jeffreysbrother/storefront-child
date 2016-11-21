@@ -16,16 +16,21 @@ table.cart td.actions {
 	thead {
 		border-bottom: 1px solid #eee;
 	}
-	tr.cart_item {
-		border-bottom: 1px solid #eee;
-		&:nth-last-of-type(1) {
-			border-bottom: none;
-		}
-	}
+	// tr.cart_item {
+	// 	border-bottom: 1px solid #eee;
+	// 	&:nth-last-of-type(1) {
+	// 		border-bottom: none;
+	// 	}
+	// }
 }
 
 // if left to "separate", the borders will not show on the tables
 table {
 	border-collapse: collapse;
+}
+
+// this removes the strange, huge border in mobile
+table.cart td.product-remove {
+	border-top: none;
 }
 

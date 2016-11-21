@@ -213,14 +213,11 @@ table.cart td.actions {
 .shop_table.shop_table_responsive.cart thead {
   border-bottom: 1px solid #eee; }
 
-.shop_table.shop_table_responsive.cart tr.cart_item {
-  border-bottom: 1px solid #eee; }
-
-.shop_table.shop_table_responsive.cart tr.cart_item:nth-last-of-type(1) {
-  border-bottom: none; }
-
 table {
   border-collapse: collapse; }
+
+table.cart td.product-remove {
+  border-top: none; }
 
 /*shop page*/
 /*I've disabled sorting functionality in functions.php, but this also eliminates the "showing the single result" message*/
