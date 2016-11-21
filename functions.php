@@ -12,7 +12,6 @@ function child_manage_woocommerce_styles() {
 	if ( function_exists( 'is_woocommerce' ) ) {
 	 	//dequeue scripts and styles
 		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-			 wp_dequeue_style( 'jvcf7_style' );
 			 wp_dequeue_style( 'mashsb-styles' );
 			 wp_dequeue_style( 'socicon' );
 			 wp_dequeue_style( 'genericons' );
@@ -21,9 +20,7 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_script( 'wc-cart-fragments' );
 			 wp_deregister_script( 'jquery-blockui' );
 			 wp_dequeue_script( 'storefront-header-cart' );
-			 wp_dequeue_script( 'jquery-form' );
-			 wp_dequeue_script( 'jvcf7_jquery_validate' );
-			 wp_dequeue_script( 'jvcf7_validation_custom' );
+			 
 		 }
 	 }
 }
@@ -58,6 +55,10 @@ function ac_remove_cf7_scripts() {
 	if ( !is_page('contact') ) {
 		wp_deregister_style( 'contact-form-7' );
 		wp_deregister_script( 'contact-form-7' );
+		wp_dequeue_script( 'jquery-form' );
+		 wp_dequeue_script( 'jvcf7_jquery_validate' );
+		 wp_dequeue_script( 'jvcf7_validation_custom' );
+		 wp_dequeue_style( 'jvcf7_style' );
 	}
 }
 
