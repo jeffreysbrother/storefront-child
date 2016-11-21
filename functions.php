@@ -25,6 +25,7 @@ function child_manage_woocommerce_styles() {
 			 wp_dequeue_script( 'jquery-form' );
 			 wp_dequeue_script( 'jvcf7_jquery_validate' );
 			 wp_dequeue_script( 'jvcf7_validation_custom' );
+			 remove_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 		 }
 	 }
 }
