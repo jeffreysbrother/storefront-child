@@ -161,14 +161,6 @@ ul.menu li.current-menu-item > a {
 .post-type-archive-product #primary {
   width: 100%; }
 
-textarea {
-  padding: .6180469716em;
-  max-width: 313px; }
-
-@media screen and (max-width: 767px) {
-  textarea, input, label {
-    max-width: 100vw; } }
-
 a:focus,
 button:focus,
 button.menu-toggle:focus,
