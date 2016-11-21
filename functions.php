@@ -12,7 +12,8 @@ function child_manage_woocommerce_styles() {
 	if ( function_exists( 'is_woocommerce' ) ) {
 	 	//dequeue scripts and styles
 		 if ( is_page_template( 'template-front-nasty.php' ) ) {
-			 wp_dequeue_style( 'storefront-woocommerce-style' );
+			 // wp_dequeue_style( 'storefront-woocommerce-style' );
+		 	 wp_dequeue_style( 'storefront-woocommerce-style', get_template_directory_uri() . '/assets/sass/woocommerce/woocommerce.css', $storefront_version );
 			 wp_dequeue_style( 'jvcf7_style' );
 			 wp_dequeue_style( 'mashsb-styles' );
 			 wp_dequeue_style( 'socicon' );
