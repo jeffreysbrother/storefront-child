@@ -39,6 +39,11 @@ function child_manage_woocommerce_styles() {
 // add_action( 'wp_print_styles', 'get_rid_of_storefront_woo_css' );
 
 
+// get rid of wp_embed
+function my_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
 
 
 
