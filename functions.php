@@ -63,7 +63,7 @@ function jc_remove_gravityforms_style() {
 	// I think I need this one...so hidden forms remain hidden
 	// wp_dequeue_style('gforms_bootstrapper_style');
 	// try to remove bootstrap.js
-	wp_dequeue_script('gform_default_bootstrap_scripts');
+	wp_dequeue_script('gforms_bootstrapper_js');
 }
 add_action('wp_print_styles', 'jc_remove_gravityforms_style');
 
