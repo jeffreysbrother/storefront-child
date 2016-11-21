@@ -16,10 +16,10 @@ table.cart td.actions {
 	thead {
 		border-bottom: 1px solid #eee;
 	}
-	tr {
+	.cart_item {
 		border-bottom: 1px solid #eee;
-		&:nth-last-of-type(2) {
-			border-bottom: 1px solid red;
+		&:nth-last-of-type(1) {
+			border-bottom: none;
 		}
 	}
 }
