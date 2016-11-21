@@ -11,7 +11,7 @@ function child_manage_woocommerce_styles() {
 	//first check that woo exists to prevent fatal errors
 	if ( function_exists( 'is_woocommerce' ) ) {
 	 	//dequeue scripts and styles
-		 if ( is_page_template( 'template-front-nasty.php' ) ) {
+		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
 			 wp_dequeue_style( 'jvcf7_style' );
 			 wp_dequeue_style( 'mashsb-styles' );
 			 wp_dequeue_style( 'socicon' );
@@ -39,7 +39,7 @@ function child_manage_woocommerce_styles() {
 // add_action( 'wp_print_styles', 'get_rid_of_storefront_woo_css' );
 
 
-// get rid of wp_embed
+// get rid of wp_embed and other mystery thing
 function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
   wp_deregister_script( 'storefront-skip-link-focus-fix' );
