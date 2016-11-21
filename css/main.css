@@ -165,7 +165,8 @@ ul.menu li.current-menu-item > a {
   outline: 0;
   box-shadow: none; }
 
-.page-id-157 input, .page-id-157 textarea {
+.page-id-157 .gform_wrapper textarea,
+.page-id-157 .gform_wrapper input {
   padding: 7px; }
 
 a:focus,

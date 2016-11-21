@@ -21,7 +21,8 @@
 		outline: 0;
 		box-shadow: none;
 	}
-	input, textarea {
+	.gform_wrapper textarea,
+	.gform_wrapper input {
 		padding: 7px;
 	}
 }
