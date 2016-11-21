@@ -60,10 +60,14 @@ add_action( 'wp_footer', 'jc_deregister_scripts' );
 function jc_remove_gravityforms_style() {
 	// remove bootstrap cuz I already loaded that shit
 	wp_dequeue_style('bootstrap_min_style');
+
 	// I think I need this one...so hidden forms remain hidden
 	// wp_dequeue_style('gforms_bootstrapper_style');
-	// try to remove bootstrap.js
+
+	// might need this gforms bootstrapper js
 	wp_dequeue_script('gforms_bootstrapper_js');
+
+	// want to eliminate bootstrap.min.js...but how?
 }
 add_action('wp_print_styles', 'jc_remove_gravityforms_style');
 
