@@ -46,6 +46,7 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 // get rid of wp_embed and other mystery thing
+// I think removing these had a very big effect on load time
 function jc_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
   wp_deregister_script( 'storefront-skip-link-focus-fix' );
@@ -107,6 +108,7 @@ function hondaross_enqueue_styles() {
         array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style' ),
         wp_get_theme()->get('Version')
     );
+    wp_enqueue_scripts( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles' );
 
