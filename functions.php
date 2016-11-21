@@ -45,11 +45,11 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 // get rid of wp_embed and other mystery thing
-function my_deregister_scripts(){
+function jc_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
   wp_deregister_script( 'storefront-skip-link-focus-fix' );
 }
-add_action( 'wp_footer', 'my_deregister_scripts' );
+add_action( 'wp_footer', 'jc_deregister_scripts' );
 
 
 
@@ -68,6 +68,10 @@ function ac_remove_cf7_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
+
+
+
+add_filter( ‘wpcf7_validate_configuration’, ‘__return_false’ );
 
 
 
