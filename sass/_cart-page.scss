@@ -23,8 +23,7 @@ table {
 
 .cart_item {
 	border-bottom: 1px solid #eee;
-	&:last-of-type {
-		border-bottom: none;
-	}
 }
-
+.cart-item:last-of-type {
+	border-bottom: none;
+}
