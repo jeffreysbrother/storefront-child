@@ -12,6 +12,7 @@ function child_manage_woocommerce_styles() {
 	 	//dequeue scripts and styles
 		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
 			 wp_dequeue_script( 'wc-add-to-cart' );
+			 // i put these back in because they (or at least one) control the drop down cart thingy
 			 // wp_dequeue_script( 'wc-cart-fragments' );
 			 // wp_dequeue_script( 'storefront-header-cart' );
 			 
