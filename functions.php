@@ -108,7 +108,7 @@ function hondaross_enqueue_styles() {
         array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style' ),
         wp_get_theme()->get('Version')
     );
-    wp_enqueue_scripts( 'custom-scripts', get_template_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
+    wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles' );
 
