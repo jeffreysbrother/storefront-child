@@ -47,8 +47,8 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 // get rid of wp_embed and other mystery thing
 function jc_deregister_scripts(){
-  // wp_deregister_script( 'wp-embed' );
-  // wp_deregister_script( 'storefront-skip-link-focus-fix' );
+  wp_deregister_script( 'wp-embed' );
+  wp_deregister_script( 'storefront-skip-link-focus-fix' );
 }
 add_action( 'wp_footer', 'jc_deregister_scripts' );
 
