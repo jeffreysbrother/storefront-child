@@ -6,8 +6,9 @@
 add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
  
 function child_manage_woocommerce_styles() {
-	 //remove generator meta tag
-	 remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
+	//remove generator meta tag
+	remove_action('get_the_generator_html','wc_generator_tag', 10,2);
+   	remove_action('get_the_generator_xhtml','wc_generator_tag', 10,2);
 	 //first check that woo exists to prevent fatal errors
 	 if ( function_exists( 'is_woocommerce' ) ) {
 	 	//dequeue scripts and styles
