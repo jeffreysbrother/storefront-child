@@ -161,6 +161,10 @@ ul.menu li.current-menu-item > a {
 .post-type-archive-product #primary {
   width: 100%; }
 
+.page-id-157 .form-control:focus {
+  outline: 0;
+  box-shadow: none; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
