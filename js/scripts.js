@@ -1,0 +1,1 @@
+jQuery('.wc-forward').css('background-color', '#0f834d');
