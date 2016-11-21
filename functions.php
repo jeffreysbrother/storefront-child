@@ -42,7 +42,7 @@ function child_manage_woocommerce_styles() {
 // get rid of wp_embed
 function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
-  wp_deregister_script( 'jquery-migtate' );
+  wp_deregister_script( 'storefront-skip-link-focus-fix' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
