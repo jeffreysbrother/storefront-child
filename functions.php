@@ -35,6 +35,7 @@ function child_manage_woocommerce_styles() {
 
 function get_rid_of_storefront_woo_css() {
 	wp_dequeue_style( 'storefront-woocommerce-style' );
+	wp_deregister_style( 'storefront-woocommerce-style' );
 }
 add_action( 'init', 'get_rid_of_storefront_woo_css' );
 
