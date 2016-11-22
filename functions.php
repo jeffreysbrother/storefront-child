@@ -104,7 +104,6 @@ add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles_and_js' );
 function lean_pages_dequeue() {
 	if ( is_page_template( 'template-front-nasty.php' ) ) {
 		wp_dequeue_style( 'mashsb-styles' );
-		wp_deregister_script( 'mashsb-scripts' );
 		wp_dequeue_style( 'socicon' );
 		wp_dequeue_style( 'genericons' );
 		wp_dequeue_style( 'fontawesome' );
