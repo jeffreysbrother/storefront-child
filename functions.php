@@ -74,6 +74,17 @@ add_action('wp_print_styles', 'jc_remove_gravityforms_style');
 
 
 
+// load gform bootstrapper stuff conditionally (only on contact-us page)
+function conditional_gform_bootstrapper() {
+	if ( !is_page( 'contact-us' ) ) {
+		wp_dequeue_style('gforms_bootstrapper_style');
+		wp_dequeue_script('gforms_bootstrapper_js');
+	}
+}
+add_action('wp_print_styles', 'conditional_gform_bootstrapper');
+
+
+
 /**
  * Remove Contact Form 7 scripts + styles unless we're on the contact page
  * 
