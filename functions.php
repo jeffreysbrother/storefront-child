@@ -78,17 +78,17 @@ add_action('wp_print_styles', 'jc_remove_gravityforms_style');
  * Remove Contact Form 7 scripts + styles unless we're on the contact page
  * 
  */
-function ac_remove_cf7_scripts() {
-	if ( !is_page('contact') ) {
-		wp_deregister_style( 'contact-form-7' );
-		wp_deregister_script( 'contact-form-7' );
-		wp_dequeue_script( 'jquery-form' );
-		wp_dequeue_script( 'jvcf7_jquery_validate' );
-		wp_dequeue_script( 'jvcf7_validation_custom' );
-		wp_dequeue_style( 'jvcf7_style' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
+// function ac_remove_cf7_scripts() {
+// 	if ( !is_page('contact') ) {
+// 		wp_deregister_style( 'contact-form-7' );
+// 		wp_deregister_script( 'contact-form-7' );
+// 		wp_dequeue_script( 'jquery-form' );
+// 		wp_dequeue_script( 'jvcf7_jquery_validate' );
+// 		wp_dequeue_script( 'jvcf7_validation_custom' );
+// 		wp_dequeue_style( 'jvcf7_style' );
+// 	}
+// }
+// add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
 
 
 
