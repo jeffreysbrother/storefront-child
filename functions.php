@@ -130,6 +130,7 @@ function lean_pages_dequeue() {
 		wp_dequeue_style( 'socicon' );
 		wp_dequeue_style( 'genericons' );
 		wp_dequeue_style( 'fontawesome' );
+		wp_dequeue_style( 'storefront-fonts' );
 		wp_deregister_script( 'jquery-blockui' );
 	}
 }
