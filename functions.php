@@ -35,12 +35,6 @@ function lean_pages_dequeue() {
 add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
-function lean_page_dequeue_2() {
-	if ( is_page_template( 'template-front-nasty.php' ) ) {
-		wp_deregister_style( 'dashicons' );
-	}
-}
-add_action( 'wp_print_styles', 'lean_page_dequeue_2', 100 );
 
 // NONE OF THIS WORKS TO GET RID OF woocommerce.css
 // function get_rid_of_storefront_woo_css() {
