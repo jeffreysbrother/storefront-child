@@ -45,6 +45,8 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 // }
 // add_action( 'wp_print_styles', 'get_rid_of_storefront_woo_css' );
 
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
 
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
