@@ -124,7 +124,7 @@ function hondaross_enqueue_styles_and_js() {
     wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/css/main.css',
-        array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style' ),
+        array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style', 'gforms_bootstrapper_style'),
         wp_get_theme()->get('Version')
     );
     wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
