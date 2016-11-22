@@ -24,18 +24,6 @@ add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
 
 
 
-// NONE OF THIS WORKS TO GET RID OF woocommerce.css
-// function get_rid_of_storefront_woo_css() {
-	// wp_dequeue_style( 'storefront-woocommerce-style' );
-	// wp_deregister_style( 'storefront-woocommerce-style' );
-	// wp_dequeue_style( 'storefront-woocommerce-style', get_template_directory_uri() . '/assets/sass/woocommerce/woocommerce.css' );
-	// add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-// }
-// add_action( 'wp_print_styles', 'get_rid_of_storefront_woo_css' );
-
-
-
-
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
 function jc_deregister_scripts(){
