@@ -173,6 +173,9 @@ ul.menu li.current-menu-item > a {
 .page-id-157 .validation_error {
   display: none !important; }
 
+.page-id-157 textarea {
+  font-size: 18px; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
