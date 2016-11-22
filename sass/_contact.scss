@@ -26,4 +26,8 @@
 	.gform_wrapper input[type=email] {
 		padding: 7px;
 	}
+	// hide validation error at the top of form
+	.validation_error {
+		display: none!important;
+	}
 }
