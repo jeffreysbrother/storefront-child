@@ -36,7 +36,7 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 
-function lean_pages_dequeue_woo() {
+function lean_pages_dequeue_woo_storefront() {
 	if ( is_page_template( 'template-front-nasty.php' ) ) {
 		// dequeue storefront woo styles
 	   	wp_dequeue_style('storefront-woocommerce-style');
@@ -47,12 +47,12 @@ function lean_pages_dequeue_woo() {
 	   	// re-enqueue custom styles for lean pages WITHOUT storefront/woo dependencies
 	   	wp_enqueue_style( 'child-style',
         	get_stylesheet_directory_uri() . '/css/main.css',
-        	array( 'bootstrap_styles', 'gforms_bootstrapper_style'),
+        	array( 'bootstrap_styles' ),
        		wp_get_theme()->get('Version')
     	);
 	}
 }
-add_action('wp_enqueue_scripts','lean_pages_dequeue_woo', 25);
+add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 25);
 
 
 
