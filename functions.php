@@ -47,7 +47,7 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+add_filter( 'storefront-woocommerce-style', '__return_empty_array' );
 
 
 
@@ -143,7 +143,7 @@ function hondaross_enqueue_styles_and_js() {
     wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/css/main.css',
-        array( 'bootstrap_styles', 'gforms_bootstrapper_style'),
+        array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style', 'gforms_bootstrapper_style'),
         wp_get_theme()->get('Version')
     );
     // wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
