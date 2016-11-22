@@ -168,7 +168,11 @@ ul.menu li.current-menu-item > a {
 .page-id-157 .gform_wrapper textarea,
 .page-id-157 .gform_wrapper input[type=text],
 .page-id-157 .gform_wrapper input[type=email] {
-  padding: 7px; }
+  padding: 7px;
+  background-color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none; }
 
 .page-id-157 .validation_error {
   display: none !important; }
