@@ -158,6 +158,8 @@ function lean_pages_dequeue_woo_storefront() {
 	   	wp_dequeue_style('storefront-style');
 	   	wp_deregister_style('storefront-style');
 	   	// re-enqueue custom styles for lean pages WITHOUT storefront/woo dependencies
+	   	wp_dequeue_style( 'child-style' );
+	   	wp_deregister_style( 'child-style' );
 	   	wp_enqueue_style( 'child-style',
         	get_stylesheet_directory_uri() . '/css/main.css',
         	array( 'bootstrap_styles' ),
