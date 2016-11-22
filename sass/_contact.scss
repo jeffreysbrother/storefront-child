@@ -33,4 +33,7 @@
 	textarea {
 		font-size: 18px;
 	}
+	input[type=submit]:focus {
+		outline: none;
+	}
 }

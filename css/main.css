@@ -176,6 +176,9 @@ ul.menu li.current-menu-item > a {
 .page-id-157 textarea {
   font-size: 18px; }
 
+.page-id-157 input[type=submit]:focus {
+  outline: none; }
+
 a:focus,
 button:focus,
 button.menu-toggle:focus,
