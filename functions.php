@@ -1,27 +1,4 @@
 <?php
-/**
- * Optimize WooCommerce Scripts
- * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
- */
- 
-function child_manage_woocommerce_styles() {
-	//remove generator meta tag
-	remove_action('wp_head', 'wp_generator');
-	//first check that woo exists to prevent fatal errors
-	if ( function_exists( 'is_woocommerce' ) ) {
-	 	//dequeue scripts and styles
-		 if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-			 // wp_dequeue_script( 'wc-add-to-cart' );
-			 // i put these back in because they (or at least one) control the drop down cart thingy
-			 // wp_dequeue_script( 'wc-cart-fragments' );
-			 // wp_dequeue_script( 'storefront-header-cart' );
-			 
-		 }
-	 }
-}
-add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
-
-
 
 
 // get rid of wp_embed and other mystery thing
@@ -155,6 +132,22 @@ function lean_pages_dequeue_woo_storefront() {
 	}
 }
 add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 25);
+
+function child_manage_woocommerce_styles_lean() {
+	//remove generator meta tag
+	remove_action('wp_head', 'wp_generator');
+	//first check that woo exists to prevent fatal errors
+	if ( function_exists( 'is_woocommerce' ) ) {
+	 	//dequeue scripts and styles if using some given template
+		 if ( is_page_template( 'template-front-nasty.php' ) ) {
+			 wp_dequeue_script( 'wc-add-to-cart' );
+			 wp_dequeue_script( 'wc-cart-fragments' );
+			 wp_dequeue_script( 'storefront-header-cart' );
+			 
+		 }
+	 }
+}
+add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles_lean', 99 );
 
 
 
