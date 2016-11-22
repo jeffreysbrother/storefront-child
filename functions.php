@@ -47,7 +47,7 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 
-add_filter( 'storefront-woocommerce-style', '__return_empty_array' );
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 
 
