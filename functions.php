@@ -23,38 +23,6 @@ add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
 
 
 
-function lean_pages_dequeue() {
-	if ( is_page_template( 'template-front-nasty.php' ) ) {
-		wp_dequeue_style( 'mashsb-styles' );
-		wp_dequeue_style( 'socicon' );
-		wp_dequeue_style( 'genericons' );
-		wp_dequeue_style( 'fontawesome' );
-		wp_deregister_script( 'jquery-blockui' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
-
-
-
-function lean_pages_dequeue_woo_storefront() {
-	if ( is_page_template( 'template-front-nasty.php' ) ) {
-		// dequeue storefront woo styles
-	   	wp_dequeue_style('storefront-woocommerce-style');
-	   	wp_deregister_style('storefront-woocommerce-style');
-	   	// dequeue storefront styles
-	   	wp_dequeue_style('storefront-style');
-	   	wp_deregister_style('storefront-style');
-	   	// re-enqueue custom styles for lean pages WITHOUT storefront/woo dependencies
-	   	wp_enqueue_style( 'child-style',
-        	get_stylesheet_directory_uri() . '/css/main.css',
-        	array( 'bootstrap_styles' ),
-       		wp_get_theme()->get('Version')
-    	);
-	}
-}
-add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 25);
-
-
 
 // NONE OF THIS WORKS TO GET RID OF woocommerce.css
 // function get_rid_of_storefront_woo_css() {
@@ -166,6 +134,38 @@ function hondaross_enqueue_styles_and_js() {
     // wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles_and_js' );
+
+
+
+
+function lean_pages_dequeue() {
+	if ( is_page_template( 'template-front-nasty.php' ) ) {
+		wp_dequeue_style( 'mashsb-styles' );
+		wp_dequeue_style( 'socicon' );
+		wp_dequeue_style( 'genericons' );
+		wp_dequeue_style( 'fontawesome' );
+		wp_deregister_script( 'jquery-blockui' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
+
+function lean_pages_dequeue_woo_storefront() {
+	if ( is_page_template( 'template-front-nasty.php' ) ) {
+		// dequeue storefront woo styles
+	   	wp_dequeue_style('storefront-woocommerce-style');
+	   	wp_deregister_style('storefront-woocommerce-style');
+	   	// dequeue storefront styles
+	   	wp_dequeue_style('storefront-style');
+	   	wp_deregister_style('storefront-style');
+	   	// re-enqueue custom styles for lean pages WITHOUT storefront/woo dependencies
+	   	wp_enqueue_style( 'child-style',
+        	get_stylesheet_directory_uri() . '/css/main.css',
+        	array( 'bootstrap_styles' ),
+       		wp_get_theme()->get('Version')
+    	);
+	}
+}
+add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 25);
 
 
 
