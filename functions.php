@@ -59,9 +59,6 @@ add_action('wp_enqueue_scripts','lean_pages_dequeue_woo', 25);
 
 
 
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
-
 
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
