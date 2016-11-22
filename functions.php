@@ -165,7 +165,7 @@ function lean_pages_dequeue_woo_storefront() {
     	);
 	}
 }
-add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 25);
+add_action('wp_enqueue_scripts','lean_pages_dequeue_woo_storefront', 100);
 
 
 
