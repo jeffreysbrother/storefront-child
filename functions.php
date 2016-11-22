@@ -36,6 +36,16 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 
 
+function lean_pages_dequeue_woo() {
+	if ( is_page_template( 'template-front-nasty.php' ) ) {
+	   	wp_dequeue_style('storefront-woocommerce-style');
+	   	wp_deregister_style('storefront-woocommerce-style');
+	}
+}
+add_action('wp_enqueue_scripts','lean_pages_dequeue_woo', 25);
+
+
+
 // NONE OF THIS WORKS TO GET RID OF woocommerce.css
 // function get_rid_of_storefront_woo_css() {
 	// wp_dequeue_style( 'storefront-woocommerce-style' );
