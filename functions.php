@@ -45,15 +45,10 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 // }
 // add_action( 'wp_print_styles', 'get_rid_of_storefront_woo_css' );
 
+
+
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
-add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
-function jk_dequeue_styles( $enqueue_styles ) {
-	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
-	unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
-	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
-	return $enqueue_styles;
-}
 
 
 // get rid of wp_embed and other mystery thing
@@ -148,7 +143,7 @@ function hondaross_enqueue_styles_and_js() {
     wp_enqueue_style( 'bootstrap_styles', get_stylesheet_directory_uri() . "/vendor/bootstrap/css/bootstrap.min.css");
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/css/main.css',
-        array( 'storefront-style', 'bootstrap_styles', 'storefront-woocommerce-style', 'gforms_bootstrapper_style'),
+        array( 'bootstrap_styles', 'gforms_bootstrapper_style'),
         wp_get_theme()->get('Version')
     );
     // wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . "/js/scripts.js", array( 'jquery' ), true );
