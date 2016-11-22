@@ -47,6 +47,14 @@ add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
 
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+	unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+	return $enqueue_styles;
+}
+
 
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
