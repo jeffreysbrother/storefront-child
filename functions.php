@@ -27,6 +27,7 @@ function lean_pages_dequeue() {
 	if ( is_page_template( 'template-front-nasty.php' ) ) {
 		wp_dequeue_style( 'mashsb-styles' );
 		wp_dequeue_style( 'socicon' );
+		wp_dequeue_style( 'dashicons' );
 		wp_dequeue_style( 'genericons' );
 		wp_dequeue_style( 'fontawesome' );
 		wp_deregister_script( 'jquery-blockui' );
