@@ -13,7 +13,6 @@
 
 
 
-
 // remove gravity form bootstrapper styles and scripts
 function jc_remove_gravityforms_style() {
 	// remove bootstrap cuz I already loaded that shit
@@ -40,24 +39,6 @@ function conditional_gform_bootstrapper() {
 	}
 }
 add_action('wp_print_styles', 'conditional_gform_bootstrapper');
-
-
-
-/**
- * Remove Contact Form 7 scripts + styles unless we're on the contact page
- *
- */
-// function ac_remove_cf7_scripts() {
-// 	if ( !is_page('contact') ) {
-// 		wp_deregister_style( 'contact-form-7' );
-// 		wp_deregister_script( 'contact-form-7' );
-// 		wp_dequeue_script( 'jquery-form' );
-// 		wp_dequeue_script( 'jvcf7_jquery_validate' );
-// 		wp_dequeue_script( 'jvcf7_validation_custom' );
-// 		wp_dequeue_style( 'jvcf7_style' );
-// 	}
-// }
-// add_action( 'wp_enqueue_scripts', 'ac_remove_cf7_scripts' );
 
 
 
@@ -164,6 +145,7 @@ function remove_breadcrumbs(){
 	remove_action( 'storefront_content_top', 'woocommerce_breadcrumb', 10 );
 }
 add_action( 'wp_head', 'remove_breadcrumbs' );
+
 
 
 // this will remove the post meta info from the blog listing page *AND* the single post page
