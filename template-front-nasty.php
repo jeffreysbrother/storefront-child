@@ -1,9 +1,5 @@
 <?php /* Template Name: Front Template, Nasty */ ?>
-<?php get_header('front');
-			require_once('r-debug.php');
-			list_hooks();
-
-?>
+<?php get_header('front'); ?>
 
 	<div>
 		<div class="block-orange">
