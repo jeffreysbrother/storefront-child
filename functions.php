@@ -4,11 +4,12 @@
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
 // but taking them out was causing an error in the queries plugin (the debugging one)
-function jc_deregister_scripts(){
+
+// function jc_deregister_scripts(){
   // wp_deregister_script( 'wp-embed' );
   // wp_deregister_script( 'storefront-skip-link-focus-fix' );
 }
-add_action( 'wp_footer', 'jc_deregister_scripts' );
+// add_action( 'wp_footer', 'jc_deregister_scripts' );
 
 
 
