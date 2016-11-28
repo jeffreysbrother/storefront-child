@@ -102,7 +102,7 @@ add_action( 'wp_enqueue_scripts', 'hondaross_enqueue_styles_and_js' );
 
 
 
-
+//  removing jquery-blockui was causing an error in the queries plugin (the debugging one)
 function lean_pages_dequeue() {
 	if ( is_page_template( 'template-front-nasty.php' ) ) {
 		wp_dequeue_style( 'mashsb-styles' );
