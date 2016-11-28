@@ -3,6 +3,7 @@
 
 // get rid of wp_embed and other mystery thing
 // I think removing these had a very big effect on load time
+// but taking them out was causing an error in the queries plugin (the debugging one)
 function jc_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
   wp_deregister_script( 'storefront-skip-link-focus-fix' );
@@ -43,7 +44,7 @@ add_action('wp_print_styles', 'conditional_gform_bootstrapper');
 
 /**
  * Remove Contact Form 7 scripts + styles unless we're on the contact page
- * 
+ *
  */
 // function ac_remove_cf7_scripts() {
 // 	if ( !is_page('contact') ) {
@@ -59,7 +60,7 @@ add_action('wp_print_styles', 'conditional_gform_bootstrapper');
 
 
 
- // Move jQuery to the footer. 
+ // Move jQuery to the footer.
 function wpse_173601_enqueue_scripts() {
     wp_scripts()->add_data( 'jquery', 'group', 1 );
     wp_scripts()->add_data( 'jquery-core', 'group', 1 );
@@ -72,7 +73,7 @@ add_action( 'wp_enqueue_scripts', 'wpse_173601_enqueue_scripts' );
 // this removes some inline styles but not all woocommerce styles, I guess
 function hondaross_remove_storefront_standard_functionality() {
 	set_theme_mod('storefront_styles', '');
-	set_theme_mod('storefront_woocommerce_styles', '');  
+	set_theme_mod('storefront_woocommerce_styles', '');
 }
 add_action( 'init', 'hondaross_remove_storefront_standard_functionality' );
 
@@ -108,7 +109,7 @@ function lean_pages_dequeue() {
 		wp_dequeue_style( 'genericons' );
 		wp_dequeue_style( 'fontawesome' );
 		wp_dequeue_style( 'storefront-fonts' );
-		wp_deregister_script( 'jquery-blockui' );
+		// wp_deregister_script( 'jquery-blockui' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'lean_pages_dequeue', 99 );
@@ -143,7 +144,7 @@ function child_manage_woocommerce_styles_lean() {
 			 wp_dequeue_script( 'wc-add-to-cart' );
 			 wp_dequeue_script( 'wc-cart-fragments' );
 			 wp_dequeue_script( 'storefront-header-cart' );
-			 
+
 		 }
 	 }
 }
@@ -262,4 +263,3 @@ function remove_storefront_sidebar_shop_page() {
 	}
 }
 add_action( 'get_header', 'remove_storefront_sidebar_shop_page' );
-
