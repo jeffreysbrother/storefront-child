@@ -8,7 +8,7 @@
 // function jc_deregister_scripts(){
   // wp_deregister_script( 'wp-embed' );
   // wp_deregister_script( 'storefront-skip-link-focus-fix' );
-}
+// }
 // add_action( 'wp_footer', 'jc_deregister_scripts' );
 
 
